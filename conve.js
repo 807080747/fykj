@@ -182,14 +182,6 @@ async function run() {
   let validLive = liveCheckRes.filter(x=>x.ok);
   console.log(`✅直播检测完成，有效：${validLive.length}，失效丢弃：${failLiveCount}`);
 
-  const liveNameSet = new Set();
-  validLive = validLive.filter(item=>{
-    if(liveNameSet.has(item.name)) return false;
-    liveNameSet.add(item.name);
-    return true;
-  });
-  console.log(`🧹去重后直播总数：${validLive.length}`);
-
   console.log(`🔍开始检测点播源有效性，待检测：${rawVodList.length} 个`);
   const vodCheckRes = await limitedMap(rawVodList, MAX_CHECK_CONCURRENT, async (ch)=>{
     const ok = await checkStreamUrl(ch.url);
@@ -197,13 +189,6 @@ async function run() {
   });
   const failVodCount = vodCheckRes.filter(x=>!x.ok).length;
   let validVod = vodCheckRes.filter(x=>x.ok);
-
-  const vodNameSet = new Set();
-  validVod = validVod.filter(item=>{
-    if(vodNameSet.has(item.name)) return false;
-    vodNameSet.add(item.name);
-    return true;
-  });
   console.log(`✅点播检测完成，有效：${validVod.length}，失效丢弃：${failVodCount}`);
 
   const groupsAll = [...new Set(validLive.map(i=>i.group))];
