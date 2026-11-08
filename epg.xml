@@ -58476,6 +58476,9 @@
 	<programme channel="newtv超级电视剧" start="20261108101400 +0800" stop="20261108101800 +0800">
 		<title lang="zh">星推荐</title>
 	</programme>
+	<programme channel="newtv超级电视剧" start="20261108101800 +0800" stop="20261108110400 +0800">
+		<title lang="zh">23_山花烂漫时</title>
+	</programme>
 	<channel id="newtv精品大剧">
 		<display-name lang="zh">NEWTV精品大剧</display-name>
 	</channel>
@@ -59066,6 +59069,9 @@
 	</programme>
 	<programme channel="newtv金牌综艺" start="20261108094500 +0800" stop="20261108102600 +0800">
 		<title lang="zh">03_前夜</title>
+	</programme>
+	<programme channel="newtv金牌综艺" start="20261108102600 +0800" stop="20261108105600 +0800">
+		<title lang="zh">美好生活第二期</title>
 	</programme>
 	<channel id="newtv精品体育">
 		<display-name lang="zh">NEWTV精品体育</display-name>
