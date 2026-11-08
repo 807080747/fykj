@@ -58473,6 +58473,9 @@
 	<programme channel="newtv超级电视剧" start="20261108092800 +0800" stop="20261108101400 +0800">
 		<title lang="zh">07_潜行者</title>
 	</programme>
+	<programme channel="newtv超级电视剧" start="20261108101400 +0800" stop="20261108101800 +0800">
+		<title lang="zh">星推荐</title>
+	</programme>
 	<channel id="newtv精品大剧">
 		<display-name lang="zh">NEWTV精品大剧</display-name>
 	</channel>
