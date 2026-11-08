@@ -15,8 +15,6 @@ const SOURCE_LIST = [
 ];
 
 const GLOBAL_TIMEOUT = 20000;
-const CHECK_STREAM_TIMEOUT = 3000;
-const MAX_CHECK_CONCURRENT = 8;
 
 const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财经广告", "弹窗", "TG频道"];
 const blackListKeywords = ["测试", "失效", "演示", "备用源", "广告台"];
@@ -43,38 +41,6 @@ function cleanChannelName(name) {
     .replace(/[◆★■●▶▷【】〖〗「」『』《》♫♪]/g, "")
     .replace(/\s+/g, " ")
     .trim();
-}
-
-async function checkStreamUrl(url) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), CHECK_STREAM_TIMEOUT);
-  try {
-    const res = await fetch(url, {
-      method: "HEAD",
-      headers: { "User-Agent": "Mozilla/5.0" },
-      signal: controller.signal
-    });
-    clearTimeout(timer);
-    return res.ok;
-  } catch (e) {
-    clearTimeout(timer);
-    return false;
-  }
-}
-
-async function limitedMap(list, limit, asyncFn) {
-  const results = [];
-  const executing = [];
-  for (const item of list) {
-    const p = Promise.resolve().then(() => asyncFn(item));
-    results.push(p);
-    if (limit <= list.length) {
-      const e = p.then(() => executing.splice(executing.indexOf(e), 1));
-      executing.push(e);
-      if (executing.length >= limit) await Promise.race(executing);
-    }
-  }
-  return await Promise.all(results);
 }
 
 function pushRawChannel(name, url, group, rawLiveList) {
@@ -159,15 +125,8 @@ async function run() {
     }
   }
 
-  console.log(`\n🔍开始检测直播源有效性，待检测：${rawLiveList.length} 个`);
-  const liveCheckRes = await limitedMap(rawLiveList, MAX_CHECK_CONCURRENT, async (ch) => {
-    const ok = await checkStreamUrl(ch.url);
-    return { ...ch, ok };
-  });
-
-  const failLiveCount = liveCheckRes.filter(x => !x.ok).length;
-  let validLive = liveCheckRes.filter(x => x.ok);
-  console.log(`✅直播检测完成，有效：${validLive.length}，失效丢弃：${failLiveCount}`);
+  const validLive = rawLiveList;
+  console.log(`✅不做存活检测，全部保留，频道总数：${validLive.length}`);
 
   const groupsAll = [...new Set(validLive.map(i => i.group))];
   const priority = groupsAll.filter(g => priorityGroups.some(p => g.includes(p)));
@@ -193,7 +152,7 @@ async function run() {
   }
   fs.writeFileSync("./live.m3u", m3u, "utf8");
 
-  console.log("\n🎉全部处理完毕｜仅输出live.txt、live.m3u");
+  console.log("\n🎉全部处理完毕｜关闭链接探测，不会误删台");
   console.log(`📺直播:${validLive.length}`);
 }
 
