@@ -14,8 +14,6 @@ const SOURCE_LIST = [
   }
 ];
 
-const EPG_URL = "https://epg.112114.xyz/pp.xml";
-
 const GLOBAL_TIMEOUT = 20000;
 const CHECK_STREAM_TIMEOUT = 3000;
 const MAX_CHECK_CONCURRENT = 8;
@@ -90,24 +88,6 @@ function pushRawChannel(name, url, group, rawLiveList) {
   if (isAd || isBlack || invalidUrl) return;
 
   rawLiveList.push({ name: cleanName, url: u, group });
-}
-
-async function downloadEpg() {
-  console.log("\n📡正在下载EPG节目单...");
-  try {
-    const res = await fetch(EPG_URL, { timeout: 25000 });
-    if (!res.ok) {
-      console.log("⚠️EPG源访问失败，跳过本次epg更新");
-      return false;
-    }
-    const xml = await res.text();
-    fs.writeFileSync("./epg.xml", xml, "utf8");
-    console.log("✅EPG epg.xml 下载完成");
-    return true;
-  } catch (err) {
-    console.log("⚠️EPG下载异常：", err.message);
-    return false;
-  }
 }
 
 async function run() {
@@ -194,7 +174,7 @@ async function run() {
   const otherGroups = groupsAll.filter(g => !priorityGroups.some(p => g.includes(p)));
   const finalGroupOrder = [...priority, ...otherGroups];
 
-  // 输出 live.txt
+  //输出 live.txt
   let liveText = "";
   for (const g of finalGroupOrder) {
     const list = validLive.filter(x => x.group === g).sort(channelNameSort);
@@ -203,7 +183,7 @@ async function run() {
   }
   fs.writeFileSync("./live.txt", liveText, "utf8");
 
-  // 输出 live.m3u
+  //输出 live.m3u
   let m3u = "#EXTM3U\n";
   for (const g of finalGroupOrder) {
     const list = validLive.filter(x => x.group === g).sort(channelNameSort);
@@ -213,9 +193,7 @@ async function run() {
   }
   fs.writeFileSync("./live.m3u", m3u, "utf8");
 
-  await downloadEpg();
-
-  console.log("\n🎉全部处理完毕｜已去掉vod.txt，全部归入直播");
+  console.log("\n🎉全部处理完毕｜仅输出live.txt、live.m3u");
   console.log(`📺直播:${validLive.length}`);
 }
 
