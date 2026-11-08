@@ -20,8 +20,8 @@ const SOURCE_LIST = [
     url: "https://seep.eu.org/https://iptv.445569.xyz/live.m3u"
   }
 ];
-// 全局统一超时：15秒
-const GLOBAL_TIMEOUT = 15000;
+// 全局统一超时：20秒，适配github actions外网网络
+const GLOBAL_TIMEOUT = 20000;
 
 // 广告关键词
 const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财经广告", "弹窗", "TG频道"];
@@ -30,17 +30,19 @@ const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财
 function pushChannel(name, url, group, totalOutput, ungroupedChannels, groupDone) {
   // 修复：同时判断【频道名】和【分组名】是否含广告关键词
   const isAd = adKeywords.some(word => name.includes(word) || group.includes(word));
-  const invalidUrl = !url.startsWith("http");
+  // 增加空url、空白字符串校验
+  const u = url.trim();
+  const invalidUrl = !u.startsWith("http") || u.length === 0;
   if (isAd || invalidUrl) return;
 
   if (group === "未分组") {
-    ungroupedChannels.push(`${name},${url}\n`);
+    ungroupedChannels.push(`${name},${u}\n`);
   } else {
     if (!groupDone.has(group)) {
       totalOutput.push(`${group},#genre#\n`);
       groupDone.add(group);
     }
-    totalOutput.push(`${name},${url}\n`);
+    totalOutput.push(`${name},${u}\n`);
   }
 }
 
@@ -61,7 +63,6 @@ async function run() {
       const res = await fetch(sourceUrl, {
         headers: {
           "User-Agent": "Mozilla/5.0",
-          // ✅关闭客户端缓存，强制拉取最新内容（URL不变，不会大量消耗CF流量）
           "Cache-Control": "no-cache, no-store, must-revalidate",
           "Pragma": "no-cache",
           "Expires": "0"
@@ -131,6 +132,10 @@ async function run() {
   // 拼接全部文本
   let finalText = totalOutput.join("");
   finalText += ungroupedChannels.join("");
+
+  // 打印统计数量，方便看日志排查
+  const total = totalOutput.length + ungroupedChannels.length;
+  console.log(`📺合并完成，频道总数：${total}`);
 
   fs.writeFileSync("./live.txt", finalText, "utf8");
   console.log("\n✅全部源处理完成！输出 live.txt");
