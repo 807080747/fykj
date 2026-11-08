@@ -14,7 +14,6 @@ const SOURCE_LIST = [
   }
 ];
 
-// 公开国内EPG节目表地址
 const EPG_URL = "https://epg.112114.xyz/pp.xml";
 
 const GLOBAL_TIMEOUT = 20000;
@@ -22,10 +21,17 @@ const CHECK_STREAM_TIMEOUT = 3000;
 const MAX_CHECK_CONCURRENT = 8;
 
 const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财经广告", "弹窗", "TG频道"];
-const vodKeywords = ["小品","相声","电影","电视剧","综艺","动漫","纪录片","短剧","点播","合集"];
+const vodKeywords = ["小品","相声","电影","电视剧","综艺","动漫","纪录片","点播","合集"];
 const blackListKeywords = ["测试","失效","演示","备用源","广告台"];
 const priorityGroups = ["央视", "央视频道", "卫视频道", "卫视"];
 // =================================================
+
+/**
+ * 中文数字自然排序（组内频道排序）
+ */
+function channelNameSort(a, b) {
+  return a.name.localeCompare(b.name, 'zh‑CN', { numeric:true, sensitivity:'base' });
+}
 
 function cleanChannelName(name){
   return name
@@ -40,7 +46,7 @@ async function checkStreamUrl(url) {
   try {
     const res = await fetch(url, {
       method: "HEAD",
-      headers: { "User-Agent": "Mozilla/5.0" },
+      headers: { "User‑Agent": "Mozilla/5.0" },
       signal: controller.signal
     });
     clearTimeout(timer);
@@ -115,9 +121,9 @@ async function run() {
       const timer = setTimeout(() => controller.abort(), GLOBAL_TIMEOUT);
       const res = await fetch(sourceUrl, {
         headers: {
-          "User-Agent": "Mozilla/5.0",
-          "Cache-Control": "no-cache, no-store, must-revalidate",
-          "Pragma": "no-cache",
+          "User‑Agent": "Mozilla/5.0",
+          "Cache‑Control": "no‑cache, no‑store, must‑revalidate",
+          "Pragma": "no‑cache",
           "Expires": "0"
         },
         signal: controller.signal
@@ -137,7 +143,7 @@ async function run() {
         const rawLine = line.trim();
         if (!rawLine) continue;
         if (rawLine.startsWith("#EXTINF:")) {
-          const gMatch = rawLine.match(/group-title="([^"]+)"/);
+          const gMatch = rawLine.match(/group‑title="([^"]+)"/);
           if (gMatch) nowGroup = gMatch[1].trim();
           const nMatch = rawLine.match(/,(.*)$/);
           if (nMatch && nMatch[1].trim()) {
@@ -191,39 +197,41 @@ async function run() {
   let validVod = vodCheckRes.filter(x=>x.ok);
   console.log(`✅点播检测完成，有效：${validVod.length}，失效丢弃：${failVodCount}`);
 
+  // 分组排序：央视卫视分组放最前面
   const groupsAll = [...new Set(validLive.map(i=>i.group))];
   const priority = groupsAll.filter(g=> priorityGroups.some(p=>g.includes(p)));
   const otherGroups = groupsAll.filter(g=>!priorityGroups.some(p=>g.includes(p)));
   const finalGroupOrder = [...priority, ...otherGroups];
 
-  // 输出 live.txt
+  //输出 live.txt
   let liveText = "";
   for(const g of finalGroupOrder){
-    const list = validLive.filter(x=>x.group === g);
+    // 同一分组内部，频道名称自动中文排序
+    const list = validLive.filter(x=>x.group === g).sort(channelNameSort);
     if(g !== "未分组") liveText += `${g},#genre#\n`;
     for(const ch of list) liveText += `${ch.name},${ch.url}\n`;
   }
   fs.writeFileSync("./live.txt", liveText, "utf8");
 
-  // 输出 live.m3u
+  //输出 live.m3u
   let m3u = "#EXTM3U\n";
   for(const g of finalGroupOrder){
-    const list = validLive.filter(x=>x.group === g);
+    const list = validLive.filter(x=>x.group === g).sort(channelNameSort);
     for(const ch of list){
-      m3u += `#EXTINF:-1 group-title="${g}",${ch.name}\n${ch.url}\n`;
+      m3u += `#EXTINF:-1 group‑title="${g}",${ch.name}\n${ch.url}\n`;
     }
   }
   fs.writeFileSync("./live.m3u", m3u, "utf8");
 
-  // 输出 vod.txt
+  //输出 vod.txt，点播也做名称排序
   let vodText = "";
+  validVod.sort((a,b)=>a.name.localeCompare(b.name,'zh‑CN',{numeric:true}));
   for(const ch of validVod) vodText += `${ch.name},${ch.url}\n`;
   fs.writeFileSync("./vod.txt", vodText, "utf8");
 
-  // 下载EPG
   await downloadEpg();
 
-  console.log("\n🎉全部处理完毕！");
+  console.log("\n🎉全部处理完毕！已自动分组+组内频道中文排序");
   console.log(`📺直播:${validLive.length} 🎬点播:${validVod.length}`);
 }
 
