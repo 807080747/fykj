@@ -1,4 +1,12 @@
 央视·省流,#genre#
+CCTV-1 综合,http://gslbmgsplive.miguvideo.com/migu/kailu/cctv1hd265/51/20191230/index.m3u8?msisdn=71dd449c3068ed780bb96bdd43e1601a&mdspid=&spid=699004&netType=0&sid=2201057821&pid=2028597139&timestamp=20261108093007&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807420&ParentNodeID=-99&assertID=2201057821&client_ip=180.153.160.8&SecurityKey=20261108093007&promotionId=&mvid=2201057821&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h265&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=74011b5d17f57838867a0ea49b2a94bf&ddCalcu=f7b4v40a91ya1a2bb59d41a7ef05a7786388&sv=10004&ct=android
+CCTV-2 财经,http://gslbmgsplive.miguvideo.com/migu/kailu/cctv2hd265/54/20200407/index.m3u8?msisdn=8033bd8e65d97c5d93169937d58cc1c4&mdspid=&spid=699004&netType=0&sid=5500346945&pid=2028597139&timestamp=20261108093007&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=631780532&ParentNodeID=-99&assertID=5500346945&client_ip=180.153.160.8&SecurityKey=20261108093007&promotionId=&mvid=5101064231&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h265&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=5961f630b94db527f6c3e0e8a29cc0ed&ddCalcu=d5e9v06ac1zcfa9623a08be904ed3bc562f7&sv=10004&ct=android
+CCTV-4 中文国际,http://gslbmgsplive.miguvideo.com/migu/kailu/cctv4hd265/51/20191230/index.m3u8?msisdn=f063aca70b51195828c931dd61d50944&mdspid=&spid=699004&netType=0&sid=5500346947&pid=2028597139&timestamp=20261108093008&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=631780421&ParentNodeID=-99&assertID=5500346947&client_ip=180.153.160.8&SecurityKey=20261108093008&promotionId=&mvid=5101064235&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h265&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6bfb2e4cbc30de244376e3b49db6095a&ddCalcu=a65bv9fa0by62abed49c4bbc33e06d7e3244&sv=10004&ct=android
+CCTV-5 体育,http://gslbmgsplive.miguvideo.com/migu/kailu/cctv5hd265/51/20191230/index.m3u8?msisdn=a9ba441f45a5c59697e5612e8ce101c7&mdspid=&spid=699004&netType=0&sid=5500516171&pid=2028597139&timestamp=20261108093009&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=641886683&ParentNodeID=-99&assertID=5500516171&client_ip=180.153.160.8&SecurityKey=20261108093009&promotionId=&mvid=5102048712&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h265&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4b355dbbc7c3db8d67e7f601cf4a51c9&ddCalcu=94cbv13a55wa5a4dfbcb1c076cf37deb786d&sv=10004&ct=android
+CCTV-5+ 体育赛事,http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv5plusnew/1200/index.m3u8?msisdn=cfd886226a7f0ce1d8e43304719b2873&mdspid=&spid=699004&netType=0&sid=5500516288&pid=2028597139&timestamp=20261108093010&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=641886773&ParentNodeID=-99&assertID=5500516288&client_ip=180.153.160.8&SecurityKey=20261108093010&promotionId=&mvid=5102048803&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4eb81f7150ca8523055551d6f94f69e6&ddCalcu=64eev9ba68xf1a4f97f165d01c5a58555203&sv=10004&ct=android
+CCTV-7 国防军事,http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv7hd/51/index.m3u8?msisdn=b5779d00a253fbf45db3d3d8c5bc7f7b&mdspid=&spid=699004&netType=0&sid=5501083622&pid=2028597139&timestamp=20261108093011&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168121&ParentNodeID=-99&assertID=5501083622&client_ip=180.153.160.8&SecurityKey=20261108093011&promotionId=&mvid=5102910278&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=96e5155563175863b4141c2a3f781e39&ddCalcu=9936veea15d81a75f535a623c117451846b3&sv=10004&ct=android
+CCTV-9 纪录,http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv9hd/51/index.m3u8?msisdn=1fc22f78dadef4762da0dedf772cd893&mdspid=&spid=699004&netType=0&sid=5501083624&pid=2028597139&timestamp=20261108093012&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168140&ParentNodeID=-99&assertID=5501083624&client_ip=180.153.160.8&SecurityKey=20261108093012&promotionId=&mvid=5102910384&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=fff68ce66312a89a6990fa630842b2f5&ddCalcu=5fffv2fab6d28a4c8e063663a1f20a98996a&sv=10004&ct=android
+CCTV-10 科教,http://gslbmgsplive.miguvideo.com/migu/kailu/cctv10hd265/54/20200407/index.m3u8?msisdn=888e2b99116301cc6e8e6733400b0a0a&mdspid=&spid=699004&netType=0&sid=5500212874&pid=2028597139&timestamp=20261108093013&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878405&ParentNodeID=-99&assertID=5500212874&client_ip=180.153.160.8&SecurityKey=20261108093013&promotionId=&mvid=5100001696&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h265&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=cc50ab5e4c978a5354b9ddc51da69932&ddCalcu=2c3cv95a90y6aaabd51e54ccd9d798ba4553&sv=10004&ct=android
 CCTV-11 戏曲,http://gslbmgsplive.miguvideo.com/migu/kailu/cctv11hd265/54/20200407/index.m3u8?msisdn=db715192daddbac3a637fb47639cdf1f&mdspid=&spid=699004&netType=0&sid=5500988610&pid=2028597139&timestamp=20261108093013&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=667987558&ParentNodeID=-99&assertID=5500988610&client_ip=180.153.160.8&SecurityKey=20261108093013&promotionId=&mvid=5102751362&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h265&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=17b69f91f2f01eae2c4cdc3eb5b5357a&ddCalcu=a177v5ba36z59abf59b1ef32cfd0c14eca2e&sv=10004&ct=android
 CCTV-12 社会与法,http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv12hd/51/index.m3u8?msisdn=50d67613524f42182bb799d6c2a92a4c&mdspid=&spid=699004&netType=0&sid=5501083627&pid=2028597139&timestamp=20261108093014&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168185&ParentNodeID=-99&assertID=5501083627&client_ip=180.153.160.8&SecurityKey=20261108093014&promotionId=&mvid=5102910389&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=01eaadfe8f758deb76b5541ce9081115&ddCalcu=5011v1ea1ad8aa0d9feec81f475558bd6e7b&sv=10004&ct=android
 CCTV-13 新闻,http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/cctv13/2000/index.m3u8?msisdn=23b86200cd2dd60627552ed5c5aa3760&mdspid=&spid=699004&netType=0&sid=2202208864&pid=2028597139&timestamp=20261108093014&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807423&ParentNodeID=-99&assertID=2202208864&client_ip=180.153.160.8&SecurityKey=20261108093014&promotionId=&mvid=2202208864&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9c8b9a36ce7cf2cb1ab7756d90c4d3d2&ddCalcu=29dcv38adby49aca0396dc6e577c7fb2ac1b&sv=10004&ct=android
@@ -30,6 +38,18 @@ CCTV-4 美洲,http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv4meihd/5
 中国农林卫视,http://gslbmgsplive.miguvideo.com/migu/kailu/zgnlws/51/20250804/index.m3u8?msisdn=4e6be5e9373f3e88d5c8d3c58e520ee4&mdspid=&spid=600572&netType=0&sid=5910022186&pid=2028597139&timestamp=20261108093035&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956904896&ParentNodeID=-99&assertID=5910022186&client_ip=180.153.160.8&SecurityKey=20261108093035&promotionId=&mvid=5900006709&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ded06daaedbc46450ddf2c5020d5c92a&ddCalcu=ad2ev9dac0k56add0a2a0e5dcb2cf4d6d405&sv=10004&ct=android
 兵团卫视,http://gslbmgsplive.miguvideo.com/migu/kailu/btws/51/20250804/index.m3u8?msisdn=e9e3dede4761fd0e0d74094f566a3cc3&mdspid=&spid=600697&netType=0&sid=5910022192&pid=2028597139&timestamp=20261108093036&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956923145&ParentNodeID=-99&assertID=5910022192&client_ip=180.153.160.8&SecurityKey=20261108093036&promotionId=&mvid=5900006716&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=bc2a14c5f784ab037f20e1a594651246&ddCalcu=6b4cv22a1ad51a644c955fa718e40a2bf073&sv=10004&ct=android
 三沙卫视,http://gslbmgsplive.miguvideo.com/migu/kailu/ssws/50/20251127/index.m3u8?msisdn=490e4c6619b1f2ccee96c416695ea97f&mdspid=&spid=600697&netType=0&sid=5910022307&pid=2028597139&timestamp=20261108093036&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=961023778&ParentNodeID=-99&assertID=5910022307&client_ip=180.153.160.8&SecurityKey=20261108093036&promotionId=&mvid=5900006777&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9dad3b3a52400208895728c547e633cd&ddCalcu=d9cdv3aa3dx63aeb734a55c2842070529088&sv=10004&ct=android
+📺央视频道,#genre#
+CCTV-2,http://74.91.26.218:82/live/cctv2hd.m3u8
+CCTV-3,http://74.91.26.218:82/live/cctv3hd.m3u8
+CCTV-7,http://74.91.26.218:82/live/cctv7hd.m3u8
+CCTV-10,http://74.91.26.218:82/live/cctv10hd.m3u8
+CCTV-11,http://74.91.26.218:82/live/cctv11hd.m3u8
+CCTV-12,http://74.91.26.218:82/live/cctv12hd.m3u8
+CCTV-15,http://74.91.26.218:82/live/cctv15hd.m3u8
+CCTV-17,http://74.91.26.218:82/live/cctv17hd.m3u8
+📡卫视频道,#genre#
+广东卫视,http://74.91.26.218:82/live/gdwshd.m3u8
+深圳卫视,http://74.91.26.218:82/live/szwshd.m3u8
 cgtn频道,#genre#
 CGTN 英语,http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/cctvnews/1000/index.m3u8?msisdn=78576e816804b356efee50e301198679&mdspid=&spid=699004&netType=0&sid=2202196407&pid=2028597139&timestamp=20261108093020&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609017205&ParentNodeID=-99&assertID=2202196407&client_ip=180.153.160.8&SecurityKey=20261108093020&promotionId=&mvid=2202196407&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=f761f50e735557e1b18dcb52148eabdf&ddCalcu=ffd7vb6aa1aefa85401e2753b5c5d5871eb1&sv=10004&ct=android
 CGTN外语纪录,http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/doc/1000/index.m3u8?msisdn=59288b8c90864356726b0978df812a6a&mdspid=&spid=699004&netType=0&sid=2200179356&pid=2028597139&timestamp=20261108093020&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006487&ParentNodeID=-99&assertID=2200179356&client_ip=180.153.160.8&SecurityKey=20261108093020&promotionId=&mvid=2200179356&mcid=500020&playurlVersion=WX-A1-9.10.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=e133fde668fb907c77451b8fe0bb1ca4&ddCalcu=4ea1vc3a13ybfabd0ee6f688bf1b5940777c&sv=10004&ct=android
@@ -61,38 +81,14 @@ CETV-4 中国教育4,http://gslbmgsplive.miguvideo.com/migu/kailu/cetv4/51/20240
 长沙政法,https://padhw.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTgwLjE1My4xNjAuOCZ0ZXJtPTQmbWFjaWQ9ZDlkY2RmMDYtN2MyNC00NjFiLTkyYmMtNjUzNDBkMjFmNTU5JnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWh3X3Bob25lJmVzPTE3OTQxMzAyODcmdXVpZD0xNGM2NGJiY2I5MTU1YzNiZWMxZTFjZjY5MmVmMGI3OC1iNDk5YTAwOCZzPTZjZGI3NjY5ODU4MzdiNTBlMDc0Y2RhNjVhNWQ0MzYxJnVpZD0mbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ2PTImYXM9MCZfY2FyQ29kZT0w/CSZFMPP360.m3u8
 浙江,#genre#
 浙江卫视,https://zwebl04.cztv.com/live/channel011080Pnew.m3u8?auth_key=1794101485727-0-0-c0d89f5ec59712cc64c8a4c85da6c586
-浙江卫视,https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1794101485727-0-0-9d58bb79969ba5fa6a5e50918148e5b7
 钱江都市,https://zwebl04.cztv.com/live/channel021080Pnew.m3u8?auth_key=1794101486279-0-0-cba969e2a4af6a7c98962e1fd5bbc8bb
-钱江都市,https://zwebl04.cztv.com/live/channel02720Pnew.m3u8?auth_key=1794101486279-0-0-178d23dccdd5988187a0c336f5998646
 教科影视,https://zwebl06.cztv.com/live/channel041080Pnew.m3u8?auth_key=1794101487242-0-0-dc43a56f08359d38137ca955988f9146
-教科影视,https://zwebl06.cztv.com/live/channel04720Pnew.m3u8?auth_key=1794101487242-0-0-938a7d3ecef08da5690626097997688c
 民生休闲,https://zwebl04.cztv.com/live/channel061080Pnew.m3u8?auth_key=1794101487761-0-0-70f738342a41cc62bbc4d698735cd6cf
-民生休闲,https://zwebl04.cztv.com/live/channel06720Pnew.m3u8?auth_key=1794101487761-0-0-9beef4b2c5d02470657eb5c3acec3c68
-新闻,https://zwebl06.cztv.com/live/channel071080Pnew.m3u8?auth_key=1794101488242-0-0-50f30a407455c9b0e10902a5d4fdfb1e
 新闻,https://zwebl06.cztv.com/live/channel07720Pnew.m3u8?auth_key=1794101488242-0-0-0af682b84308e3d0d5cc89a9b2560ed2
 少儿频道,https://zwebl06.cztv.com/live/channel081080Pnew.m3u8?auth_key=1794101488765-0-0-b338fce3a7a66c2d421e05c81bc07eb3
-少儿频道,https://zwebl06.cztv.com/live/channel08720Pnew.m3u8?auth_key=1794101488765-0-0-d01893a7b85e3a67105e4e8e3a6d5a11
 浙江国际,https://zwebl04.cztv.com/live/channel101080Pnew.m3u8?auth_key=1794101489181-0-0-a865e8906137b56d2cdd9600e38870dc
-浙江国际,https://zwebl04.cztv.com/live/channel10720Pnew.m3u8?auth_key=1794101489181-0-0-16190869411399f19969dec9f8c4558a
 好易购,https://zwebl06.cztv.com/live/channel111080Pnew.m3u8?auth_key=1794101489647-0-0-24fd7164b9917682d349ef0f86c5be21
-好易购,https://zwebl06.cztv.com/live/channel11720Pnew.m3u8?auth_key=1794101489647-0-0-8557616b5bfa7bce8db36339a135fd1e
 之江纪录,https://zwebl06.cztv.com/live/channel121080Pnew.m3u8?auth_key=1794101490140-0-0-2bd1276a4fa64af61ea8a11468caca47
-之江纪录,https://zwebl06.cztv.com/live/channel12720Pnew.m3u8?auth_key=1794101490140-0-0-fbf88fc8dc23aa7c7e67abe01f32ba1e
-📺央视频道,#genre#
-CCTV-2,http://74.91.26.218:82/live/cctv2hd.m3u8
-CCTV-3,http://74.91.26.218:82/live/cctv3hd.m3u8
-CCTV-7,http://74.91.26.218:82/live/cctv7hd.m3u8
-CCTV-10,http://74.91.26.218:82/live/cctv10hd.m3u8
-CCTV-11,http://74.91.26.218:82/live/cctv11hd.m3u8
-CCTV-12,http://74.91.26.218:82/live/cctv12hd.m3u8
-CCTV-15,http://74.91.26.218:82/live/cctv15hd.m3u8
-CCTV-17,http://74.91.26.218:82/live/cctv17hd.m3u8
-📡卫视频道,#genre#
-广东卫视,http://74.91.26.218:82/live/gdwshd.m3u8
-浙江卫视,http://74.91.26.218:82/live/zjwshd.m3u8
-东方卫视,http://74.91.26.218:82/live/dfwshd.m3u8
-江苏卫视,http://74.91.26.218:82/live/jswshd.m3u8
-深圳卫视,http://74.91.26.218:82/live/szwshd.m3u8
 📰新闻财经,#genre#
 Newsmax,https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/3.m3u8
 Sky News International,https://xumo-drct-skynews-nc91a.fast.nbcuni.com/live/master_5.m3u8
@@ -138,73 +134,11 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 功夫,https://vd3.bdstatic.com/mda-mjn3rmcivntas8ez/hd/cae_h264_nowatermark/1635016788091110865/mda-mjn3rmcivntas8ez.mp4?pd=19&vt=1
 相亲1,https://vd3.bdstatic.com/mda-ki5quadqsdi1tk9e/mda-ki5quadqsdi1tk9e.mp4?pd=-1&pt=0&cr=0&vt=0&cd=0&did=cfcd208495d565ef66e7dff9f98764da&logid=3024484252&vid=10808391094376007907&auth_key=1655295624-0-0-6fb10727b6c3c195f08ff9bebe036cd0&bcevod_channel=searchbox_feed
 相亲2,https://vd3.bdstatic.com/mda-kipkytij74rnn9k3/hd/mda-kipkytij74rnn9k3.mp4?pd=19&vt=1&playlist=%5B%22sc%22%2C%22hd%22%5D 钟点工
-火炬手,https://vd3.bdstatic.com/mda-jar0302925j1nwep/hd/mda-jar0302925j1nwep.mp4?pd=19&vt=1&playlist=%5B%22hd%22%5D
-生日快乐,https://vd3.bdstatic.com/mda-mkskgzkzsgvgcntm/540p/h264_cae/1638023743815756700/mda-mkskgzkzsgvgcntm.mp4?pd=19&vt=1
-狭路相逢,https://vd3.bdstatic.com/mda-kd0mku18u3rui7gz/v1-cae/hd/mda-kd0mku18u3rui7gz.mp4?pd=19&vt=1&playlist=%5B%22hd%22%2C%22sc%22%5D
-阳仔演笑会,https://vdse.bdstatic.com//cf06ee490cf69657ab9f333e067b348e.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-15T10%3A30%3A16Z%2F-1%2Fhost%2Fe3b07458bdfa3f2b9dd841f97ab3b32a73e1f5c3c55fec0e851f21054900b4a3
-阳仔演笑会2,https://vdse.bdstatic.com//b837548733e6bd32629f9134457ad811.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-14T12%3A24%3A48Z%2F-1%2Fhost%2F21b407cd58e7d2f39864128a9160659f1f4845e2cf4c01c6e2a3f30be1dbc557
-同桌的你,https://vd3.bdstatic.com/mda-kkfwqyn6sc4r5579/mda-kkfwqyn6sc4r5579.mp4?pd=19&vt=1
-小九老乐,https://vd3.bdstatic.com/mda-maqs355itqp221rx/v2-hknm/hd/mda-maqs355itqp221rx.mp4?pd=19&vt=1
-年前年后,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0300f250000br00c6t03hnekstiv2rg&ratio=720p&line=0
-卖梨,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f850000bqvq43ueankk4sopbea0&ratio=720p&line=0
-城市打工妹,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fb00000br0007k2v0nbugkvpqc0&ratio=720p&line=0
-如此竞争,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fe60000br000frls1kbc9rjapeg&ratio=720p&line=0
-儿子大了,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f020000bqvq3u89lgt8of4fk0tg&ratio=720p&line=0
-同学会,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f9c0000brabn8v70gfhplsfi78g&ratio=720p&line=0
-拜年,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0d00fg10000c83hhi3c77u01a8d7hp0&ratio=720p&line=0
-新虎口遐想,https://vd4.bdstatic.com/mda-jarfmdf8su7sckk3/hd/mda-jarfmdf8su7sckk3.mp4?auth_key=1655295819-0-0-df94f7531d93ff90ad12888c89a672ca&bcevod_channel=searchbox_feed&cd=0&pd=1&pt=3&logid=3219421685&vid=8705230262897615568&abtest=all
-冯巩郭冬临狗不理包子,https://vd2.bdstatic.com/mda-jdqwqnk1xxszhw8c/mda-jdqwqnk1xxszhw8c.mp4?pd=-1&pt=0&cr=0&vt=0&cd=0&did=cfcd208495d565ef66e7dff9f98764da&logid=2275698282&vid=17330773072848394300&auth_key=1655291275-0-0-73fe6c276ababcdb43b87a4fda6002df&bcevod_channel=searchbox_feed
-牛群冯巩领导冒号,https://vdse.bdstatic.com//123b1e01f5128d0e71b4f392ec1a971c.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-12T06%3A54%3A23Z%2F-1%2Fhost%2F6274ff464fd635b6108aacc556df42224f265e9b3f4bd3a37a74cbdbf985d0b8
-牛群冯巩我的儿子,https://vdse.bdstatic.com//f27179e048a85dd2f00d16f6a13ac370.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-15T08%3A43%3A23Z%2F-1%2Fhost%2F026eb7ddc17de37a053903ceb90523b0265d8e5c7ed8eb5b20f5cc0de186f27c
-牛群冯巩两个弄潮儿,https://vd3.bdstatic.com/mda-mkqdhm17rs7198m6/hd/cae_h264/1637859905115117938/mda-mkqdhm17rs7198m6.mp4?pd=19&vt=1
-要条件,https://vd2.bdstatic.com/mda-kgah4byryi8gsqk8/v1-cae/mda-kgah4byryi8gsqk8.mp4?pd=-1&pt=0&cr=0&vt=0&cd=0&did=cfcd208495d565ef66e7dff9f98764da&logid=1347013120&vid=11361264719745011699&auth_key=1655290347-0-0-5dfca4bc79fbe4b6685de35fd1e0a622&bcevod_channel=searchbox_feed
-策划,https://vd3.bdstatic.com/mda-ki60ag5ub193axs9/hd/mda-ki60ag5ub193axs9.mp4?pd=19&vt=1&playlist=%5B%22sc%22%2C%22hd%22%5D
-不差钱,https://vdse.bdstatic.com//769f31778a85f33825c44a9b0c70ac37.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-15T10%3A24%3A57Z%2F-1%2Fhost%2F9d4a74ab09dc18c2f4d9b0b8f77c621471a15359ec3b77c186f51611f4712005
-就差钱,https://vdse.bdstatic.com//812d49e751aa31530ec39debfe54a359.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-14T08%3A49%3A09Z%2F-1%2Fhost%2Fa58bdb86d23b53b6909e8e19d85dad9fed3adeba4a664a22eef9a7d32ac2486a
-昨天今天明天,https://vd3.bdstatic.com/mda-ia4xz7n2s4hxbhby/logo/hd/mda-ia4xz7n2s4hxbhby.mp4?pd=19&vt=1&playlist=%5B%22hd%22%2C%22sc%22%5D
-捐助,https://vd3.bdstatic.com/mda-jaqz8g17b9cvryks/hd/mda-jaqz8g17b9cvryks.mp4?pd=19&vt=1
-捐助后传,https://vd3.bdstatic.com/mda-kbsrpz9zmbbvznjw/hd/mda-kbsrpz9zmbbvznjw.mp4?pd=19&vt=1&playlist=%5B%22hd%22%2C%22sc%22%5D
-小崔说事,https://vdse.bdstatic.com//2f54cd59170279f94c5b354179bda8c0.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-12T04%3A47%3A48Z%2F-1%2Fhost%2Fc0d35c8c0a00af3226ac1bc3a1510c1474d8054a30290740da4a2d567924f779
-小崔说事儿,https://vdse.bdstatic.com//0881642336164cb448c0d8addd2d22a6.mp4?authorization=bce-auth-v1/40f207e648424f47b2e3dfbb1014b1a5/2022-05-28T07:29:10Z/-1/host/4c290e67925bf7954af616c290b337b52a840355f1184f78619d696a5da5c0bb
-中奖了,https://vd3.bdstatic.com/mda-kmkh9zy2b3gnx4bq/mda-kmkh9zy2b3gnx4bq.mp4?pd=19&vt=1
-功夫,https://vd3.bdstatic.com/mda-mjn3rmcivntas8ez/hd/cae_h264_nowatermark/1635016788091110865/mda-mjn3rmcivntas8ez.mp4?pd=19&vt=1
-相亲1,https://vd3.bdstatic.com/mda-ki5quadqsdi1tk9e/mda-ki5quadqsdi1tk9e.mp4?pd=-1&pt=0&cr=0&vt=0&cd=0&did=cfcd208495d565ef66e7dff9f98764da&logid=3024484252&vid=10808391094376007907&auth_key=1655295624-0-0-6fb10727b6c3c195f08ff9bebe036cd0&bcevod_channel=searchbox_feed
-相亲2,https://vd3.bdstatic.com/mda-kipkytij74rnn9k3/hd/mda-kipkytij74rnn9k3.mp4?pd=19&vt=1&playlist=%5B%22sc%22%2C%22hd%22%5D
-火炬手,https://vd3.bdstatic.com/mda-jar0302925j1nwep/hd/mda-jar0302925j1nwep.mp4?pd=19&vt=1&playlist=%5B%22hd%22%5D
-我想有个家,https://vd3.bdstatic.com/mda-mkskgzkzsgvgcntm/540p/h264_cae/1638023743815756700/mda-mkskgzkzsgvgcntm.mp4?pd=19&vt=1
-狭路相逢,https://vd3.bdstatic.com/mda-kd0mku18u3rui7gz/v1-cae/hd/mda-kd0mku18u3rui7gz.mp4?pd=19&vt=1&playlist=%5B%22hd%22%2C%22sc%22%5D
-阳仔演笑会2,https://vdse.bdstatic.com//b837548733e6bd32629f9134457ad811.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-14T12%3A24%3A48Z%2F-1%2Fhost%2F21b407cd58e7d2f39864128a9160659f1f4845e2cf4c01c6e2a3f30be1dbc557
-同桌的你,https://vd3.bdstatic.com/mda-kkfwqyn6sc4r5579/mda-kkfwqyn6sc4r5579.mp4?pd=19&vt=1
-非诚来扰,https://vd3.bdstatic.com/mda-jk4sx2ggq7u355d6/hd/mda-jk4sx2ggq7u355d6.mp4
-幸福密码,https://vd3.bdstatic.com/mda-kj9ispnax8gpirkf/hd/mda-kj9ispnax8gpirkf.mp4
-狭路相逢,https://vd3.bdstatic.com/mda-kanfj7h320ueqgkg/v1-cae/hd/mda-kanfj7h320ueqgkg.mp4
-最佳酒友,https://vd3.bdstatic.com/mda-jheqyidz841gwxpy/hd/mda-jheqyidz841gwxpy.mp4
-整容归来,https://vd3.bdstatic.com/mda-ji1xe9cmasuh0722/hd/mda-ji1xe9cmasuh0722.mp4
-老王卖瓜,https://vd3.bdstatic.com/mda-jkrk9bk95f9utr9r/hd/mda-jkrk9bk95f9utr9r.mp4
-策划,https://vd3.bdstatic.com/mda-ki60ag5ub193axs9/hd/mda-ki60ag5ub193axs9.mp4?pd=19&vt=1&playlist=%5B%22sc%22%2C%22hd%22%5D
-不差钱,https://vdse.bdstatic.com//769f31778a85f33825c44a9b0c70ac37.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-15T10%3A24%3A57Z%2F-1%2Fhost%2F9d4a74ab09dc18c2f4d9b0b8f77c621471a15359ec3b77c186f51611f4712005
-就差钱,https://vdse.bdstatic.com//812d49e751aa31530ec39debfe54a359.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-14T08%3A49%3A09Z%2F-1%2Fhost%2Fa58bdb86d23b53b6909e8e19d85dad9fed3adeba4a664a22eef9a7d32ac2486a
-昨天今天明天,https://vd3.bdstatic.com/mda-ia4xz7n2s4hxbhby/logo/hd/mda-ia4xz7n2s4hxbhby.mp4?pd=19&vt=1&playlist=%5B%22hd%22%2C%22sc%22%5D
-捐助,https://vd3.bdstatic.com/mda-jaqz8g17b9cvryks/hd/mda-jaqz8g17b9cvryks.mp4?pd=19&vt=1
-捐助后传,https://vd3.bdstatic.com/mda-kbsrpz9zmbbvznjw/hd/mda-kbsrpz9zmbbvznjw.mp4?pd=19&vt=1&playlist=%5B%22hd%22%2C%22sc%22%5D
-小崔说事,https://vdse.bdstatic.com//2f54cd59170279f94c5b354179bda8c0.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-12T04%3A47%3A48Z%2F-1%2Fhost%2Fc0d35c8c0a00af3226ac1bc3a1510c1474d8054a30290740da4a2d567924f779
-小崔说事儿,https://vdse.bdstatic.com//0881642336164cb448c0d8addd2d22a6.mp4?authorization=bce-auth-v1/40f207e648424f47b2e3dfbb1014b1a5/2022-05-28T07:29:10Z/-1/host/4c290e67925bf7954af616c290b337b52a840355f1184f78619d696a5da5c0bb
-中奖了,https://vd3.bdstatic.com/mda-kmkh9zy2b3gnx4bq/mda-kmkh9zy2b3gnx4bq.mp4?pd=19&vt=1
-功夫,https://vd3.bdstatic.com/mda-mjn3rmcivntas8ez/hd/cae_h264_nowatermark/1635016788091110865/mda-mjn3rmcivntas8ez.mp4?pd=19&vt=1
-相亲1,https://vd3.bdstatic.com/mda-ki5quadqsdi1tk9e/mda-ki5quadqsdi1tk9e.mp4?pd=-1&pt=0&cr=0&vt=0&cd=0&did=cfcd208495d565ef66e7dff9f98764da&logid=3024484252&vid=10808391094376007907&auth_key=1655295624-0-0-6fb10727b6c3c195f08ff9bebe036cd0&bcevod_channel=searchbox_feed
-相亲2,https://vd3.bdstatic.com/mda-kipkytij74rnn9k3/hd/mda-kipkytij74rnn9k3.mp4?pd=19&vt=1&playlist=%5B%22sc%22%2C%22hd%22%5D
-钟点工,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fg10000c8e2e53c77ua6v88gk9g&ratio=720p&line=0
 火炬手,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fg10000c54t79jc77u7est4rcn0&ratio=720p&line=0
-火炬手,https://vd3.bdstatic.com/mda-jar0302925j1nwep/hd/mda-jar0302925j1nwep.mp4?pd=19&vt=1&playlist=%5B%22hd%22%5D
 生日快乐,https://vd3.bdstatic.com/mda-mkskgzkzsgvgcntm/540p/h264_cae/1638023743815756700/mda-mkskgzkzsgvgcntm.mp4?pd=19&vt=1
-狭路相逢,https://vd3.bdstatic.com/mda-kd0mku18u3rui7gz/v1-cae/hd/mda-kd0mku18u3rui7gz.mp4?pd=19&vt=1&playlist=%5B%22hd%22%2C%22sc%22%5D
-超级大明星,https://vd3.bdstatic.com/mda-ji3f9bxs1cxwmui7/hd/mda-ji3f9bxs1cxwmui7.mp4?pd=19&vt=1&playlist=%5B%22hd%22%5D
 阳仔演笑会,https://vdse.bdstatic.com//cf06ee490cf69657ab9f333e067b348e.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-15T10%3A30%3A16Z%2F-1%2Fhost%2Fe3b07458bdfa3f2b9dd841f97ab3b32a73e1f5c3c55fec0e851f21054900b4a3
 阳仔演笑会2,https://vdse.bdstatic.com//b837548733e6bd32629f9134457ad811.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-14T12%3A24%3A48Z%2F-1%2Fhost%2F21b407cd58e7d2f39864128a9160659f1f4845e2cf4c01c6e2a3f30be1dbc557
 同桌的你,https://vd3.bdstatic.com/mda-kkfwqyn6sc4r5579/mda-kkfwqyn6sc4r5579.mp4?pd=19&vt=1
-中奖了,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fg10000c416nhbc77ueljqcfms0&ratio=720p&line=0
-有钱了,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0300fg10000c4mruerc77ua2hethfig&ratio=720p&line=0
-小草,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f580000bqvq5p2kgg1hr4fgtkng&ratio=720p&line=0
 小九老乐,https://vd3.bdstatic.com/mda-maqs355itqp221rx/v2-hknm/hd/mda-maqs355itqp221rx.mp4?pd=19&vt=1
 办班,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0300f830000bqvq3vcssiod1f1acv10&ratio=720p&line=0
 年前年后,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0300f250000br00c6t03hnekstiv2rg&ratio=720p&line=0
@@ -220,16 +154,17 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 牛群冯巩我的儿子,https://vdse.bdstatic.com//f27179e048a85dd2f00d16f6a13ac370.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2022-06-15T08%3A43%3A23Z%2F-1%2Fhost%2F026eb7ddc17de37a053903ceb90523b0265d8e5c7ed8eb5b20f5cc0de186f27c
 牛群冯巩两个弄潮儿,https://vd3.bdstatic.com/mda-mkqdhm17rs7198m6/hd/cae_h264/1637859905115117938/mda-mkqdhm17rs7198m6.mp4?pd=19&vt=1
 要条件,https://vd2.bdstatic.com/mda-kgah4byryi8gsqk8/v1-cae/mda-kgah4byryi8gsqk8.mp4?pd=-1&pt=0&cr=0&vt=0&cd=0&did=cfcd208495d565ef66e7dff9f98764da&logid=1347013120&vid=11361264719745011699&auth_key=1655290347-0-0-5dfca4bc79fbe4b6685de35fd1e0a622&bcevod_channel=searchbox_feed
+我想有个家,https://vd3.bdstatic.com/mda-mkskgzkzsgvgcntm/540p/h264_cae/1638023743815756700/mda-mkskgzkzsgvgcntm.mp4?pd=19&vt=1
+钟点工,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fg10000c8e2e53c77ua6v88gk9g&ratio=720p&line=0
+超级大明星,https://vd3.bdstatic.com/mda-ji3f9bxs1cxwmui7/hd/mda-ji3f9bxs1cxwmui7.mp4?pd=19&vt=1&playlist=%5B%22hd%22%5D
+有钱了,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0300fg10000c4mruerc77ua2hethfig&ratio=720p&line=0
+小草,https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f580000bqvq5p2kgg1hr4fgtkng&ratio=720p&line=0
 坑,https://vd3.bdstatic.com/mda-ph4fhjeba5u11w7x/720p/h264/1691233166920479250/mda-ph4fhjeba5u11w7x.mp4
 恋爱保险,https://txmov2.a.kwimgs.com/bs3/video-hls/5196591116322611782_hlsb.m3u8
-同学会,https://vd3.bdstatic.com/mda-ph4fwpc174w60zvg/360p/h264/1691234295970938202/mda-ph4fwpc174w60zvg.mp4
-同学会,https://txmov2.a.kwimgs.com/bs3/video-hls/5227553308164378988_hlshd15.m3u8
 街头卫士,https://txmov2.a.kwimgs.com/bs3/video-hls/5226708889618362322_hlshd15.m3u8
 开往春天的幸福,https://txmov2.a.kwimgs.com/bs3/video-hls/5241064162376216322_hlsb.m3u8
-开往春天的幸福,https://vd4.bdstatic.com/mda-ph4ed0f1mg21dbra/720p/h264/1691230284848984877/mda-ph4ed0f1mg21dbra.mp4
 你摊上事了,https://vd2.bdstatic.com/mda-ph7encbycui2jsz1/360p/h264/1691490426342582737/mda-ph7encbycui2jsz1.mp4
 演戏给你看,https://txmov2.a.kwimgs.com/bs3/video-hls/5201376192625816947_hlshd15.m3u8
-演戏给你看,https://vd2.bdstatic.com/mda-ph4ef5pq5eb7q700/360p/h264/1691230544278970198/mda-ph4ef5pq5eb7q700.mp4
 爱情不外卖-宋小宝,https://vd3.bdstatic.com/mda-qdi22ybfwyy1q4hg/576p/h264/1713490457499046386/mda-qdi22ybfwyy1q4hg.mp4
 爱在路上-贾冰,https://vd3.bdstatic.com/mda-qa28zq0kgb5ue4sf/hd/cae_h264/1704267082982713296/mda-qa28zq0kgb5ue4sf.mp4
 爱之初体验-乔杉,https://vdse.bdstatic.com//b793bb2a10d6bd46c5164a2f3a0d0d22.mp4
@@ -259,7 +194,6 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 吃面条-乔杉修睿,https://vd3.bdstatic.com/mda-qe61ugedwph6s2a3/hd/cae_h264/1715064353019743134/mda-qe61ugedwph6s2a3.mp4
 赤壁-艾伦魏翔柳岩,https://vd3.bdstatic.com/mda-pjcjn21d0hmzifu7/sc/cae_h264/1697247683328112619/mda-pjcjn21d0hmzifu7.mp4
 聪明的小明-贾旭明张康,https://vd3.bdstatic.com/mda-pjq9i7q9jtk1xihv/sc/cae_h264/1698297243158263907/mda-pjq9i7q9jtk1xihv.mp4
-聪明丈夫-黄宏,https://vd3.bdstatic.com/mda-ka8fdjhs6iihkz16/v1-cae/hd/mda-ka8fdjhs6iihkz16.mp4
 打工奇遇-赵丽蓉巩汉林,https://vdse.bdstatic.com//867790e13a90309cd1b88b05a08fd6a7.mp4
 打劫-宋小宝程野,https://vdse.bdstatic.com//a9d07519513c0cccde393073cf76b15f.mp4
 大城小事-王宁艾伦常远,https://vd3.bdstatic.com/mda-pmr9xw0cpsj4kaap/cae_h264/1703596182082567530/mda-pmr9xw0cpsj4kaap.mp4
@@ -269,6 +203,7 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 对象相对象-田娃,https://vd3.bdstatic.com/mda-pihku1q5nv859fdw/sc/cae_h264/1695117159935295857/mda-pihku1q5nv859fdw.mp4
 发红包-贾冰沙溢,https://vd3.bdstatic.com/mda-pjjb2szh0n4neqkn/sc/cae_h264/1697844560163307160/mda-pjjb2szh0n4neqkn.mp4
 返乡-冯巩,https://vd3.bdstatic.com/mda-qe61hc8r07903h0y/hd/cae_h264/1715062959363359020/mda-qe61hc8r07903h0y.mp4
+饭局-崔大笨,https://vd3.bdstatic.com/mda-qath2i3w9zir4y0c/hd/cae_h264/1706449702568209513/mda-qath2i3w9zir4y0c.mp4
 方清平倪萍,http://uptt.gcwduoduo.com/v/191017/e72c99b584c26337138c62db14ca22f8.mp4
 飞天梦-潘长江,https://vd3.bdstatic.com/mda-phi48ipauh8fu3hz/hd/cae_h264/1692428453329925015/mda-phi48ipauh8fu3hz.mp4
 非诚不找-宋晓峰文松,https://vd3.bdstatic.com/mda-phwcjzu6h6850kxz/sc/cae_h264/1694050660601397503/mda-phwcjzu6h6850kxz.mp4
@@ -276,6 +211,7 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 非诚勿扰-许君聪,https://vdse.bdstatic.com//779eec16c16e056ff59a696f4672196f.mp4
 翡翠西瓜-文松杨树林,https://vd3.bdstatic.com/mda-pmwbd6i27e5tkgr2/sc/cae_h264/1704018772026715780/mda-pmwbd6i27e5tkgr2.mp4
 疯狂炒作团-程野,https://vd3.bdstatic.com/mda-miubn40zps8xuutu/hd/cae_h264_nowatermark/1632904102877646564/mda-miubn40zps8xuutu.mp4
+疯狂的年糕-张小伟,https://vd3.bdstatic.com/mda-mbhjajaqpzjw82iz/cae_h264_nowatermark/1613630447/mda-mbhjajaqpzjw82iz.mp4
 疯狂粉丝团-程野,https://vd3.bdstatic.com/mda-qec1huz7j89mqz7g/hd/cae_h264/1715587003695323458/mda-qec1huz7j89mqz7g.mp4
 疯狂假币-张小伟,https://vd3.bdstatic.com/mda-qb84g637ckii75tk/hd/cae_h264/1707448703626078040/mda-qb84g637ckii75tk.mp4
 疯狂鉴宝团-程野,https://vd3.bdstatic.com/mda-pdhbv35rc093pm4i/576p/h264/1681807215871903151/mda-pdhbv35rc093pm4i.mp4
@@ -296,6 +232,7 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 虎口遐想1-姜昆,https://vd3.bdstatic.com/mda-ngk9ceyz1dxj2e0q/hd/cae_h264/1658399933939920696/mda-ngk9ceyz1dxj2e0q.mp4
 虎口遐想2-姜昆,https://vd4.bdstatic.com/mda-jarfmdf8su7sckk3/hd/mda-jarfmdf8su7sckk3.mp4
 花盆-黄宏,http://uptt.gcwduoduo.com/v/181110/4e1175ce7f85e0eb9edb836c67a580f1.mp4
+华府招亲-宋晓峰程野,https://vd3.bdstatic.com/mda-qaq8rpne4zdj1y6i/hd/cae_h264/1706241051829414854/mda-qaq8rpne4zdj1y6i.mp4
 怀孕-乔杉修睿,https://vdse.bdstatic.com//86cf78ae4cfadc9dac585a70b2587808.mp4
 黄师傅-沙溢,https://vd3.bdstatic.com/mda-pj8c6tjud36zznfh/sc/cae_h264/1696898736769689180/mda-pj8c6tjud36zznfh.mp4
 回家-宋小宝,https://vd3.bdstatic.com//mda-pjpave8ceiq2b12x/360p/h264/1698133283249504866/mda-pjpave8ceiq2b12x.mp4
@@ -325,6 +262,7 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 旧曲新歌-冯巩郭冬临,https://vd3.bdstatic.com/mda-qe91ueh7g3xf4iwj/hd/cae_h264/1715334206233421824/mda-qe91ueh7g3xf4iwj.mp4
 就差钱-赵本山,https://vd3.bdstatic.com/mda-pe88dd94mqtwvswc/hd/cae_h264/1683660151332694377/mda-pe88dd94mqtwvswc.mp4
 捐助-赵本山,https://vd3.bdstatic.com/mda-jaqz8g17b9cvryks/hd/mda-jaqz8g17b9cvryks.mp4
+决战元宵夜-宋晓峰,https://vd3.bdstatic.com/mda-pijei4tdebp7ddd2/sc/cae_h264/1696417703069907523/mda-pijei4tdebp7ddd2.mp4
 看病-宋小宝,https://vdse.bdstatic.com//e15d4c14eb11f1e7dd8bf55fdae721be.mp4
 烤串-宋小宝,https://vd3.bdstatic.com/mda-pj7e225zuig2w5jm/sc/cae_h264/1696809230955715635/mda-pj7e225zuig2w5jm.mp4
 快乐其实很简单-孙涛闫妮,https://vd3.bdstatic.com/mda-pigkr72v8crpjxxj/sc/cae_h264/1695246535846469304/mda-pigkr72v8crpjxxj.mp4
@@ -440,7 +378,6 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 小棉袄-冯巩张小斐,https://vd3.bdstatic.com/mda-qek23c1m3iazzr5s/720p/h264/1716255340389023490/mda-qek23c1m3iazzr5s.mp4
 笑傲江湖-开心麻花,https://vd3.bdstatic.com/mda-piq301rs4uknj41j/sc/cae_h264/1695970140872236040/mda-piq301rs4uknj41j.mp4
 心病-赵本山,http://uptt.gcwduoduo.com/v/190528/ad11d8507454d002d52cf31e5515bde2.mp4
-心病-赵本山,https://vdse.bdstatic.com//bfe074b881566418706a1602b2f253a4.mp4
 心理学初探-郭冬临黄杨,https://vd3.bdstatic.com/mda-nd29frt5x3uda8k4/hd/cae_h264_delogo/1649022474817109527/mda-nd29frt5x3uda8k4.mp4
 新白蛇传-小沈阳沈春阳,https://vd3.bdstatic.com/mda-qfjimpbeu9ueciux/hd/cae_h264/1718890904826260647/mda-qfjimpbeu9ueciux.mp4
 新邻居-牛群曹然然,https://vd3.bdstatic.com/mda-pa1gqcwkx77c9ia0/sc/cae_h264/1672779796571890058/mda-pa1gqcwkx77c9ia0.mp4
@@ -456,6 +393,7 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 一年又一年-贾玲张小斐,https://vd3.bdstatic.com/mda-qe926b60mpqw636g/hd/cae_h264/1715326388121092299/mda-qe926b60mpqw636g.mp4
 一念天堂-沈腾,https://vd3.bdstatic.com/mda-qe9ah9r1226d9izg/hd/cae_h264/1715333285173833900/mda-qe9ah9r1226d9izg.mp4
 一夜心跳-曹云金,https://vd3.bdstatic.com/mda-pjckm11tj36nwtej/sc/cae_h264/1697248964625465071/mda-pjckm11tj36nwtej.mp4
+一张火车票-周卫星何晶晶,https://vd3.bdstatic.com/mda-ng0dn66ydfqwbwg5/hd/cae_h264/1656668968823252017/mda-ng0dn66ydfqwbwg5.mp4
 一醉十年-郭冬临,https://vd3.bdstatic.com/mda-pitdrx572bq0yw95/sc/cae_h264/1696330551584589656/mda-pitdrx572bq0yw95.mp4
 银行大厅趣事-王雪冬,https://vd3.bdstatic.com/mda-qap3etstixv6tet3/hd/cae_h264/1706066606060577418/mda-qap3etstixv6tet3.mp4
 有病没病-赵本山,https://vd3.bdstatic.com/mda-qa790h76byvmbvfu/hd/cae_h264/1704696228429624311/mda-qa790h76byvmbvfu.mp4
@@ -490,14 +428,12 @@ France 24 English,https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/mas
 坐月子那点儿事-熊乃瑾付辛博,https://vdse.bdstatic.com//be5cb6ace9182fad443a16148c3a9cdb.mp4
 TFgirls-贾玲张小斐,https://vd3.bdstatic.com/mda-qc64dz3a7dai9wmn/576p/h264/1709780957602048364/mda-qc64dz3a7dai9wmn.mp4
 4K测试,#genre#
-湖南4K,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 深圳卫视4K,http://192.187.124.34:81/live/szws4k.m3u8
 江苏卫视4K,http://192.187.124.34:81/live/jsws4k.m3u8
 四川卫视4K,http://192.187.124.34:81/live/scws4k.m3u8
 山东卫视4K,http://192.187.124.34:81/live/sdws4k.m3u8
 东方卫视4K,http://192.187.124.34:81/live/dfws4k.m3u8
 广东卫视4K,http://192.187.124.34:81/live/gdws4k.m3u8
-浙江卫视4K,http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
 联通源,#genre#
 赛事最经典,http://45.192.97.170:8880/play/20.m3u8
 电信源,#genre#
@@ -528,9 +464,6 @@ CETV 1 中国教育,https://a8.061899.xyz/mg/cetv1
 CETV 2 中国教育,https://a8.061899.xyz/mg/cetv2
 CETV 4 中国教育,https://a8.061899.xyz/mg/cetv4
 广东珠江,https://a8.061899.xyz/mg/gdzj
-浙江卫视,https://a8.061899.xyz/mg/zjws
-广东卫视,https://a8.061899.xyz/mg/gdws
-江苏卫视,https://a8.061899.xyz/mg/jsws
 内网源,#genre#
 CCTV1綜合,http://173.208.234.146/live/cctv1.m3u8
 CCTV2財經,http://173.208.234.146/live/cctv2.m3u8
@@ -551,12 +484,10 @@ CCTV16奧利匹克,http://173.208.234.146/live/cctv16.m3u8
 CCTV17農業農村,http://173.208.234.146/live/cctv17.m3u8
 CCTV5+體育賽事,http://173.208.234.146/live/cctv5p.m3u8
 综合台☘️☘️💝,#genre#
-CHC家庭影院,http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub
 重温经典,http://38.75.136.137:98/gslb/dsdqpub/cwjd.m3u8?auth=testpub
 香港翡翠,http://218.13.139.26:9901/tsfile/live/1079_1.m3u8?key=txiptv&playlive=1&authid=0
 凤凰中文台,http://218.13.139.26:9901/tsfile/live/1080_1.m3u8?key=txiptv&playlive=1&authid=0
 澳亚卫视台,http://218.13.139.26:9901/tsfile/live/1081_1.m3u8?key=txiptv&playlive=1&authid=0
-CHC家庭影院,http://218.13.139.26:9901/tsfile/live/0018_1.m3u8?key=txiptv&playlive=1&authid=0
 🇭🇰港香频道港,#genre#
 香港卫视,http://webcast.hkstv.tv:80/livestream/mutfysrq/playlist.m3u8?hls_ctx=9dl33ad6
 凤凰中文,http://156.238.224.170:7001/fhx.php?id=cn
@@ -564,24 +495,23 @@ CCTV1,http://120.76.248.139/live/bfgd/4200000488.m3u8
 凤凰资讯,http://183.239.248.218:8181/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=
 TVBS新闻,http://jnzq.ohoyee.com:9080/live/xingjiaoge-tvbsxw.m3u8
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8
-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
 韩国新闻,http://amdlive.ctnd.com.edgesuite.net:80/arirang_1ch/smil:arirang_1ch.smil/chunklist_b2256000_sleng.m3u8
 红牛运动,http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_928.m3u8
 唯心电视,http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8
-唯心电视,http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/playlist.m3u8
 生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8
 备用港澳台1,#genre#
-中天新闻,http://111.0.115.129:8081/live/000ztxw.m3u8
+中天新闻,http://iactive-clink.com:8081/live/111ztxw.m3u8
 台视新聞,https://live.wcetv.com/hls/m3u8/ttvnews.m3u8
 tvbs,http://61.221.215.25:8800/hls/9/index.m3u8
 80后经典歌曲,#genre#
 黄家驹,https://vd4.bdstatic.com/mda-pdmaxg5vf0bmrpxx/sc/cae_h264/1682179055724322707/mda-pdmaxg5vf0bmrpxx.mp4
 黄家驹不再犹豫,https://vd3.bdstatic.com/mda-nm75269264v485fe/sc/cae_h264/1670475833350119754/mda-nm75269264v485fe.mp4
 黄家驹永远的beyond,https://vd2.bdstatic.com/mda-nmbduj4y5qrhr14v/576p/h264/1670838831995101004/mda-nmbduj4y5qrhr14v.mp4
-张国荣金曲,https://vd2.bdstatic.com/mda-na8hrvu9tk4svhrf/sc/cae_h264_delogo/1642260080397657076/mda-na8hrvu9tk4svhrf.mp4
 周传雄,https://vd4.bdstatic.com/mda-paq1wctq73q8kv3k/sc/cae_h264/1674630332295698141/mda-paq1wctq73q8kv3k.mp4
 罗文,https://vd4.bdstatic.com/mda-pas47g35beq7c8am/576p/h264/1674788386403294509/mda-pas47g35beq7c8am.mp4
+罗大佑,https://vd3.bdstatic.com/mda-paj3bndqef0brg82/hd/cae_h264/1674182231284241416/mda-paj3bndqef0brg82.mp4
 邰正宵,https://vd2.bdstatic.com/mda-pai1fgvqnzfshm79/hd/cae_h264/1674091705705323755/mda-pai1fgvqnzfshm79.mp4
+张镐哲,https://vd3.bdstatic.com/mda-pai1autuhxiwv606/hd/cae_h264/1674091410698310238/mda-pai1autuhxiwv606.mp4
 孟庭苇,https://vd4.bdstatic.com/mda-pah0g785da3bd8cg/hd/cae_h264/1674003403215729852/mda-pah0g785da3bd8cg.mp4
 陈慧娴,https://vd2.bdstatic.com/mda-pag1mzva41p63jq5/hd/cae_h264/1673927648285556707/mda-pag1mzva41p63jq5.mp4
 蔡依林,https://vd4.bdstatic.com/mda-pac79inw7bdc065u/hd/cae_h264/1673588623519298769/mda-pac79inw7bdc065u.mp4
@@ -592,6 +522,7 @@ tvbs,http://61.221.215.25:8800/hls/9/index.m3u8
 草蜢乐队,https://vd3.bdstatic.com/mda-pab6g9c7wiiqtrga/hd/cae_h264/1673505526767573188/mda-pab6g9c7wiiqtrga.mp4
 小虎队,https://vd2.bdstatic.com/mda-paa30i5xz1kit41f/hd/cae_h264/1673418932656982871/mda-paa30i5xz1kit41f.mp4
 张宇,https://vd4.bdstatic.com/mda-paq1swz9kfiww0nf/720p/h264/1674609379540322499/mda-paq1swz9kfiww0nf.mp4
+王杰,https://vd3.bdstatic.com/mda-paj24w3pip97yamz/sc/cae_h264/1674185355776462627/mda-paj24w3pip97yamz.mp4
 黄安,https://vd4.bdstatic.com/mda-paj1yviih627m7br/sc/cae_h264/1674182480562260368/mda-paj1yviih627m7br.mp4
 郭富城,https://vd3.bdstatic.com/mda-paj1y1ffn07b81zr/sc/cae_h264/1674180953809875143/mda-paj1y1ffn07b81zr.mp4
 陈淑桦,https://vd2.bdstatic.com/mda-paib4m1zb47fz3j0/sc/cae_h264/1674117441894799856/mda-paib4m1zb47fz3j0.mp4
@@ -610,6 +541,7 @@ S.H.E,https://vd2.bdstatic.com/mda-nkg6vju7i34is8z3/sc/cae_h264/1668668139955974
 伍佰,http://vd3.bdstatic.com/mda-pe07i71fkd531zj1/sc/bd265_cae_roi_v5/1682947766065803786/mda-pe07i71fkd531zj1.mp4
 月亮,https://vd4.bdstatic.com/mda-jgwewhc9bepbuwn0/hd/mda-jgwewhc9bepbuwn0.mp4
 爱人跟人走闽南歌曲老歌配泳装,https://vd4.bdstatic.com/mda-nihfpd5eadd9v5aj/576p/h264/1663499128104260927/mda-nihfpd5eadd9v5aj.mp4
+英文歌曲麻烦是朋友-Trouble Is A Friend,https://vd4.bdstatic.com/mda-ke8tez6x72w0qyyt/v1-cae/hd/mda-ke8tez6x72w0qyyt.mp4
 做你的爱人,http://vd4.bdstatic.com/mda-kmqgyhj16m8qgziu/mda-kmqgyhj16m8qgziu.mp4
 Day by Day,http://vd4.bdstatic.com/mda-ma39e363u5ebd33e/v1-cae/mda-ma39e363u5ebd33e.mp4
 大家一起来,http://vd4.bdstatic.com/mda-madrvwbtks7xk4t4/v1-cae/mda-madrvwbtks7xk4t4.mp4
