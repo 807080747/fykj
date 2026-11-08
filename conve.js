@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const fs = require('fs');
 
-// =========源列表，已经删掉空url条目=========
+// =====================配置区=====================
 const SOURCE_LIST = [
   {
     url: "https://seep.eu.org/https://raw.githubusercontent.com/djshxjsh233/migu/refs/heads/main/live.txt"
@@ -14,18 +14,26 @@ const SOURCE_LIST = [
   }
 ];
 
+// 公开国内EPG节目表地址
+const EPG_URL = "https://epg.112114.xyz/pp.xml";
+
 const GLOBAL_TIMEOUT = 20000;
-// 单个播放链接探测超时 3000ms
 const CHECK_STREAM_TIMEOUT = 3000;
-// 最大并发探测数量，不要调大，防止限流
 const MAX_CHECK_CONCURRENT = 8;
 
 const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财经广告", "弹窗", "TG频道"];
 const vodKeywords = ["小品","相声","电影","电视剧","综艺","动漫","纪录片","短剧","点播","合集"];
+const blackListKeywords = ["测试","失效","演示","备用源","广告台"];
+const priorityGroups = ["央视", "央视频道", "卫视频道", "卫视"];
+// =================================================
 
-/**
- * 探测单个播放链接是否http可达，HEAD请求，不下载视频内容
- */
+function cleanChannelName(name){
+  return name
+    .replace(/[◆★■●▶▷【】〖〗「」『』《》♫♪]/g,"")
+    .replace(/\s+/g," ")
+    .trim();
+}
+
 async function checkStreamUrl(url) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), CHECK_STREAM_TIMEOUT);
@@ -43,9 +51,6 @@ async function checkStreamUrl(url) {
   }
 }
 
-/**
- * 简单并发队列控制
- */
 async function limitedMap(list, limit, asyncFn) {
   const results = [];
   const executing = [];
@@ -55,25 +60,45 @@ async function limitedMap(list, limit, asyncFn) {
     if(limit <= list.length){
       const e = p.then(()=>executing.splice(executing.indexOf(e),1));
       executing.push(e);
-      if(executing.length >= limit){
-        await Promise.race(executing);
-      }
+      if(executing.length >= limit) await Promise.race(executing);
     }
   }
   return await Promise.all(results);
 }
 
 function pushRawChannel(name, url, group, rawLiveList, rawVodList){
-  const isAd = adKeywords.some(word => name.includes(word) || group.includes(word));
-  const isVod = vodKeywords.some(word => name.includes(word));
+  const cleanName = cleanChannelName(name);
   const u = url.trim();
   const invalidUrl = !u.startsWith("http") || u.length === 0;
-  if(isAd || invalidUrl) return;
+
+  const isAd = adKeywords.some(w=> cleanName.includes(w) || group.includes(w));
+  const isBlack = blackListKeywords.some(w=> cleanName.includes(w));
+  const isVod = vodKeywords.some(w=> cleanName.includes(w));
+
+  if(isAd || isBlack || invalidUrl) return;
 
   if(isVod){
-    rawVodList.push({name, url:u, group});
+    rawVodList.push({name:cleanName, url:u, group});
   }else{
-    rawLiveList.push({name, url:u, group});
+    rawLiveList.push({name:cleanName, url:u, group});
+  }
+}
+
+async function downloadEpg(){
+  console.log("\n📡正在下载EPG节目单...");
+  try{
+    const res = await fetch(EPG_URL, { timeout:25000 });
+    if(!res.ok){
+      console.log("⚠️EPG源访问失败，跳过本次epg更新");
+      return false;
+    }
+    const xml = await res.text();
+    fs.writeFileSync("./epg.xml", xml, "utf8");
+    console.log("✅EPG epg.xml 下载完成");
+    return true;
+  }catch(err){
+    console.log("⚠️EPG下载异常：",err.message);
+    return false;
   }
 }
 
@@ -148,46 +173,73 @@ async function run() {
   }
 
   console.log(`\n🔍开始检测直播源有效性，待检测：${rawLiveList.length} 个`);
-  // 对直播做可用性检测
   const liveCheckRes = await limitedMap(rawLiveList, MAX_CHECK_CONCURRENT, async (ch)=>{
     const ok = await checkStreamUrl(ch.url);
     return {...ch, ok};
   });
-  const validLive = liveCheckRes.filter(x=>x.ok);
-  console.log(`✅检测完成，有效直播频道：${validLive.length}`);
+
+  const failLiveCount = liveCheckRes.filter(x=>!x.ok).length;
+  let validLive = liveCheckRes.filter(x=>x.ok);
+  console.log(`✅直播检测完成，有效：${validLive.length}，失效丢弃：${failLiveCount}`);
+
+  const liveNameSet = new Set();
+  validLive = validLive.filter(item=>{
+    if(liveNameSet.has(item.name)) return false;
+    liveNameSet.add(item.name);
+    return true;
+  });
+  console.log(`🧹去重后直播总数：${validLive.length}`);
 
   console.log(`🔍开始检测点播源有效性，待检测：${rawVodList.length} 个`);
   const vodCheckRes = await limitedMap(rawVodList, MAX_CHECK_CONCURRENT, async (ch)=>{
     const ok = await checkStreamUrl(ch.url);
     return {...ch, ok};
   });
-  const validVod = vodCheckRes.filter(x=>x.ok);
-  console.log(`✅检测完成，有效点播条目：${validVod.length}`);
+  const failVodCount = vodCheckRes.filter(x=>!x.ok).length;
+  let validVod = vodCheckRes.filter(x=>x.ok);
 
-  // 组装输出live.txt
-  const groupDone = new Set();
+  const vodNameSet = new Set();
+  validVod = validVod.filter(item=>{
+    if(vodNameSet.has(item.name)) return false;
+    vodNameSet.add(item.name);
+    return true;
+  });
+  console.log(`✅点播检测完成，有效：${validVod.length}，失效丢弃：${failVodCount}`);
+
+  const groupsAll = [...new Set(validLive.map(i=>i.group))];
+  const priority = groupsAll.filter(g=> priorityGroups.some(p=>g.includes(p)));
+  const otherGroups = groupsAll.filter(g=>!priorityGroups.some(p=>g.includes(p)));
+  const finalGroupOrder = [...priority, ...otherGroups];
+
+  // 输出 live.txt
   let liveText = "";
-  for(const ch of validLive){
-    if(ch.group === "未分组"){
-      liveText += `${ch.name},${ch.url}\n`;
-    }else{
-      if(!groupDone.has(ch.group)){
-        liveText += `${ch.group},#genre#\n`;
-        groupDone.add(ch.group);
-      }
-      liveText += `${ch.name},${ch.url}\n`;
-    }
+  for(const g of finalGroupOrder){
+    const list = validLive.filter(x=>x.group === g);
+    if(g !== "未分组") liveText += `${g},#genre#\n`;
+    for(const ch of list) liveText += `${ch.name},${ch.url}\n`;
   }
   fs.writeFileSync("./live.txt", liveText, "utf8");
 
-  // 组装输出vod.txt
-  let vodText = "";
-  for(const ch of validVod){
-    vodText += `${ch.name},${ch.url}\n`;
+  // 输出 live.m3u
+  let m3u = "#EXTM3U\n";
+  for(const g of finalGroupOrder){
+    const list = validLive.filter(x=>x.group === g);
+    for(const ch of list){
+      m3u += `#EXTINF:-1 group-title="${g}",${ch.name}\n${ch.url}\n`;
+    }
   }
+  fs.writeFileSync("./live.m3u", m3u, "utf8");
+
+  // 输出 vod.txt
+  let vodText = "";
+  for(const ch of validVod) vodText += `${ch.name},${ch.url}\n`;
   fs.writeFileSync("./vod.txt", vodText, "utf8");
 
-  console.log("\n🎉全部处理完毕，输出 live.txt vod.txt");
+  // 下载EPG
+  await downloadEpg();
+
+  console.log("\n🎉全部处理完毕！");
+  console.log(`📺直播:${validLive.length} 🎬点播:${validVod.length}`);
 }
 
 run();
