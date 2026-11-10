@@ -4,7 +4,7 @@ const fs = require('fs');
 // =====================配置区=====================
 const SOURCE_LIST = [
   {
-    url: "https://seep.eu.org/https://raw.githubusercontent.com/djshxjsh233/migu/refs/heads/main/live.txt"
+    url: "http://1.94.31.214/live/live9/dgtv.txt"
   },
   {
     url: "http://iptv.910501.xyz/"
