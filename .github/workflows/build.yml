@@ -20,8 +20,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: 安装依赖 npm install node-fetch@2
-
+      - name: 安装依赖 node-fetch@2
         run: npm install node-fetch@2
 
       - name: 执行脚本生成源文件
