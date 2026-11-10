@@ -20,20 +20,21 @@ jobs:
         with:
           node-version: 20
 
-      - name: 安装依赖 node-fetch@2
+      - name: 安装依赖
         run: npm install node-fetch@2
 
-      - name: 执行脚本生成源文件
+      - name: 运行生成脚本
         run: node conve.js
 
-      - name: 提交生成的文件回仓库
+      - name: 提交更新文件
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add live.txt live.m3u
+          git diff --cached
           if git diff --cached --quiet; then
-            echo "文件无更新，跳过提交推送"
+            echo "👉 文件内容无变化，跳过提交"
           else
-            git commit -m "auto update iptv source"
+            git commit -m "🤖 auto update iptv $(date '+%Y-%m-%d %H:%M')"
             git push
           fi
