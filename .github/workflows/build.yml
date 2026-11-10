@@ -31,5 +31,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add live.txt live.m3u
-          git commit -m "auto update iptv source"
-          git push
+          if git diff --cached --quiet; then
+            echo "文件无更新，跳过提交推送"
+          else
+            git commit -m "auto update iptv source"
+            git push
+          fi
