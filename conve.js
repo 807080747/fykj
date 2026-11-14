@@ -9,6 +9,9 @@ const SOURCE_LIST = [
   {
     url: "http://iptv.910501.xyz/"
   },
+  {
+    url: "https://16097.kstore.space/xiang/migu.txt"
+  },
   // {
   //   url: "http://wangziduoqing.cn/yuan/zb.txt"
   // }
