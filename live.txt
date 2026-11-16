@@ -1,4 +1,4 @@
-#更新时间：2026/11/16 19:04:44
+#更新时间：2026/11/16 19:15:19
 📺央视频道,#genre#
 CCTV-2,http://74.91.26.218:82/live/cctv2hd.m3u8
 CCTV-3,http://74.91.26.218:82/live/cctv3hd.m3u8
@@ -5115,17 +5115,6 @@ TVB News,http://r.jdshipin.com/CkuBd
 TVB Plus,http://php.jdshipin.com/TVOD/iptv.php?id=j2
 Wild Earth,https://wildearth-plex.amagi.tv/masterR1080p.m3u8
 WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
-☘️重要提醒🍀,#genre#
-2026.11.16,http://ali-xwl.cztv.com/live/channel011080Pnew.m3u8
-不定时更新,http://119.233.255.62:1234/608807420
-纯爱好 异常访问删链接跑路,http://ali-xwl.cztv.com/live/channel011080Pnew.m3u8
-分组带SK5 需要酷九内置版,http://ali-xwl.cztv.com/live/channel011080Pnew.m3u8
-禁止贩卖 请勿打赏,http://ali-xwl.cztv.com/live/channel011080Pnew.m3u8
-禁止上山 TG,http://ali-xwl.cztv.com/live/channel011080Pnew.m3u8
-卡顿左右换源,http://ali-xwl.cztv.com/live/channel011080Pnew.m3u8
-链接每日刷新一次,http://119.233.255.62:1234/608807420
-资源自收集于网络,http://ali-xwl.cztv.com/live/channel011080Pnew.m3u8
-APTV ua推荐 Apple TV/16.0,http://119.233.255.62:1234/608807420
 代理,#genre#
 4K超高清,https://kai.xiangz.qzz.io/xiang/xiangdaili/guangdong.php?id=16
 4K超高清,http://x.xiangz.qzz.io/xiang/daidai/guangdong.php?id=16
