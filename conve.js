@@ -142,7 +142,7 @@ async function run() {
   const otherGroups = groupsAll.filter(g => !priorityGroups.some(p => g.includes(p)));
   const finalGroupOrder = [...priority, ...otherGroups];
 
-  //输出 live.txt 带上时间戳 + 成人频道分组加锁 |666
+  //输出 live.txt 带上时间戳 + 成人频道分组加锁 _666
   let liveText = "";
   const updateTime = new Date().toLocaleString('zh-CN');
   liveText += `#更新时间：${updateTime}\n`;
