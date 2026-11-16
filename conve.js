@@ -29,7 +29,6 @@ const lockGroupName = "成人频道"; // 需要加密的分组名
 const lockPwd = "666";        // 密码
 // =================================================
 
-
 function getCctvNum(name) {
   const m = name.match(/CCTV[‑‑](\d+)/i);
   if (m) return parseInt(m[1], 10);
@@ -79,8 +78,6 @@ async function run() {
         headers: {
           "User-Agent": "Mozilla/5.0",
           "Cache-Control": "no-cache, no-store, must-revalidate",
-          "Pragma": "no-cache",
-          "Expires": "0"
         },
         signal: controller.signal
       });
@@ -142,7 +139,7 @@ async function run() {
   const otherGroups = groupsAll.filter(g => !priorityGroups.some(p => g.includes(p)));
   const finalGroupOrder = [...priority, ...otherGroups];
 
-  //输出 live.txt 带上时间戳 + 成人频道分组加锁 _666
+  //输出 live.txt  成人频道分组格式：成人频道_666,#genre#
   let liveText = "";
   const updateTime = new Date().toLocaleString('zh-CN');
   liveText += `#更新时间：${updateTime}\n`;
@@ -150,7 +147,7 @@ async function run() {
     const list = validLive.filter(x => x.group === g).sort(channelNameSort);
     if (g !== "未分组") {
       if(g.includes(lockGroupName)){
-        liveText += `${g}|${lockPwd},#genre#\n`;
+        liveText += `${g}_${lockPwd},#genre#\n`;
       }else{
         liveText += `${g},#genre#\n`;
       }
@@ -159,7 +156,7 @@ async function run() {
   }
   fs.writeFileSync("./live.txt", liveText, "utf8");
 
-  //输出 live.m3u （m3u标准本身不支持分组锁，锁只在txt生效；m3u原样输出）
+  //输出 live.m3u m3u不支持分组密码，原样输出
   let m3u = "#EXTM3U\n";
   m3u += `#更新时间：${updateTime}\n`;
   for (const g of finalGroupOrder) {
@@ -172,7 +169,7 @@ async function run() {
 
   console.log("\n🎉全部处理完毕｜关闭链接探测，不会误删台");
   console.log(`📺直播:${validLive.length}`);
-  console.log(`🔒【${lockGroupName}】分组已上锁，密码：${lockPwd}（仅txt格式生效）`);
+  console.log(`🔒【${lockGroupName}】分组已上锁，密码：${lockPwd}，输出格式：${lockGroupName}_${lockPwd},#genre#`);
 }
 
 run();
