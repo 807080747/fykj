@@ -7,12 +7,7 @@ const SOURCE_LIST = [
     {
     url: "https://gh-proxy.com/https://raw.githubusercontent.com/807080747/zv/refs/heads/main/lidfffgghhgififjfjjfve.txt"
   }, 
-  {
-    url: "https://16097.kstore.space/xiang/migu.txt"
-  },
-  // {
-  //   url: "http://wangziduoqing.cn/yuan/zb.txt"
-  // }
+  
 ];
 
 const GLOBAL_TIMEOUT = 12000;
