@@ -25,6 +25,8 @@ const GLOBAL_TIMEOUT = 12000;
 const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财经广告", "弹窗", "TG频道"];
 const blackListKeywords = ["测试", "失效", "演示", "备用源", "广告台"];
 const priorityGroups = ["央视", "央视频道", "卫视频道", "卫视"];
+const lockGroupName = "综艺"; // 需要加密的分组名
+const lockPwd = "666";        // 密码
 // =================================================
 
 function getCctvNum(name) {
@@ -139,18 +141,24 @@ async function run() {
   const otherGroups = groupsAll.filter(g => !priorityGroups.some(p => g.includes(p)));
   const finalGroupOrder = [...priority, ...otherGroups];
 
-  //输出 live.txt 带上时间戳
+  //输出 live.txt 带上时间戳 + 成人频道分组加锁 |666
   let liveText = "";
   const updateTime = new Date().toLocaleString('zh-CN');
   liveText += `#更新时间：${updateTime}\n`;
   for (const g of finalGroupOrder) {
     const list = validLive.filter(x => x.group === g).sort(channelNameSort);
-    if (g !== "未分组") liveText += `${g},#genre#\n`;
+    if (g !== "未分组") {
+      if(g.includes(lockGroupName)){
+        liveText += `${g}|${lockPwd},#genre#\n`;
+      }else{
+        liveText += `${g},#genre#\n`;
+      }
+    }
     for (const ch of list) liveText += `${ch.name},${ch.url}\n`;
   }
   fs.writeFileSync("./live.txt", liveText, "utf8");
 
-  //输出 live.m3u 带上时间戳
+  //输出 live.m3u （m3u标准本身不支持分组锁，锁只在txt生效；m3u原样输出）
   let m3u = "#EXTM3U\n";
   m3u += `#更新时间：${updateTime}\n`;
   for (const g of finalGroupOrder) {
@@ -163,6 +171,7 @@ async function run() {
 
   console.log("\n🎉全部处理完毕｜关闭链接探测，不会误删台");
   console.log(`📺直播:${validLive.length}`);
+  console.log(`🔒【${lockGroupName}】分组已上锁，密码：${lockPwd}（仅txt格式生效）`);
 }
 
 run();
