@@ -29,6 +29,7 @@ const lockGroupName = "成人频道"; // 需要加密的分组名
 const lockPwd = "666";        // 密码
 // =================================================
 
+
 function getCctvNum(name) {
   const m = name.match(/CCTV[‑‑](\d+)/i);
   if (m) return parseInt(m[1], 10);
