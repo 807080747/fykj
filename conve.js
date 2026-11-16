@@ -3,9 +3,23 @@ const fs = require('fs');
 
 // =====================配置区=====================
 const SOURCE_LIST = [
-  
+  {
+    url: "http://iptv.910501.xyz/"
+  },
+  {
+    url: "http://1.94.31.214/live/live9/dgtv.txt"
+  },
     {
     url: "https://gh-proxy.com/https://raw.githubusercontent.com/807080747/zv/refs/heads/main/lidfffgghhgififjfjjfve.txt"
+  }, 
+      {
+    url: "http://wangziduoqing.cn/yuan/zb.txt"
+  }, 
+   {
+    url: "http://iptv.910501.xyz/"
+  },
+ {
+    url: "https://16097.kstore.space/xiang/migu.txt"
   }, 
   
 ];
