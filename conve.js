@@ -25,7 +25,7 @@ const GLOBAL_TIMEOUT = 12000;
 const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财经广告", "弹窗", "TG频道"];
 const blackListKeywords = ["测试", "失效", "演示", "备用源", "广告台"];
 const priorityGroups = ["央视", "央视频道", "卫视频道", "卫视"];
-const lockGroupName = "综艺"; // 需要加密的分组名
+const lockGroupName = "成人频道"; // 需要加密的分组名
 const lockPwd = "666";        // 密码
 // =================================================
 
