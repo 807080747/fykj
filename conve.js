@@ -16,7 +16,7 @@ const SOURCE_LIST = [
     url: "http://wangziduoqing.cn/yuan/zb.txt"
   }, 
    {
-    url: "http://iptv.910501.xyz/"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/807080747/Collect-IPTV/refs/heads/main/best_sorted.m3u"
   },
  {
     url: "https://16097.kstore.space/xiang/migu.txt"
