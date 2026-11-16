@@ -1,4 +1,4 @@
-#更新时间：2026/11/16 15:14:30
+#更新时间：2026/11/16 15:31:05
 央视,#genre#
 发现之旅,http://113.98.11.46:3000/624878970
 老故事,http://113.98.11.46:3000/884121956
@@ -2756,7 +2756,7 @@ tvN2,https://d21dxaer0ypwk1.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b7
 tvN5,https://d2zyqoz1zsj2mq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-i9yul1lyegl6e-ssai-prd/6d07fe2a_003a_4879_acfc_44e3c3c10f03/hls/playlist.m3u8?tvN
 Wipeout Xtra,https://amg00627-banijaygroup-wipeoutxtraau-samsungau-ashbl.amagi.tv/playlist/amg00627-banijaygroup-wipeoutxtraau-samsungau/playlist.m3u8
 World of Freesports,https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/1080p-en/index.m3u8
-成人频道,#genre#
+成人频道|666,#genre#
 彩虹,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/87.ts
 惊艳,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/85.ts
 精艳,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/85.ts
