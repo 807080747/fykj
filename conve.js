@@ -10,10 +10,10 @@ const SOURCE_LIST = [
     url: "http://1.94.31.214/live/live9/dgtv.txt"
   },
     {
-    url: "https://gh-proxy.com/https://raw.githubusercontent.com/807080747/zv/refs/heads/main/lidfffgghhgififjfjjfve.txt"
+    url: ""
   }, 
       {
-    url: "http://wangziduoqing.cn/yuan/zb.txt"
+    url: ""
   }, 
    {
     url: "https://gh-proxy.com/https://raw.githubusercontent.com/807080747/Collect-IPTV/refs/heads/main/best_sorted.m3u"
