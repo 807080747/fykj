@@ -31,7 +31,6 @@ const lockPwd = "666";        // 密码
 // =================================================
 
 function getCctvNum(name) {
-  // 修复：正则兼容全角‑和半角-
   const m = name.match(/CCTV[‑\-](\d+)/i);
   if (m) return parseInt(m[1], 10);
   return null;
@@ -92,7 +91,8 @@ async function run() {
       let channelName = "未知频道";
 
       for (const line of lines) {
-        const rawLine = line.trim();
+        // ==========核心修复：先清除\r回车符再trim，解决migu.txt解析不到==========
+        const rawLine = line.replace(/\r/g, '').trim();
         if (!rawLine) continue;
 
         // m3u 扩展信息行 #EXTINF
