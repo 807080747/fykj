@@ -10,7 +10,7 @@ const SOURCE_LIST = [
     url: "https://nb.xymm.de5.net/0ybmli/https://iptv.445569.xyz/live.m3u"
   },
       {
-      "url: "https://raw.githubusercontent.com/807080747/ss/refs/heads/main/ooo.txt"
+      "url: "https://gh-proxy.com/https://raw.githubusercontent.com/807080747/ss/refs/heads/main/ooo.txt"
   }, 
       {
     url: "http://1.94.31.214/live/live9/dgtv.txt"
