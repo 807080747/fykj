@@ -4,16 +4,16 @@ const fs = require('fs');
 // =====================配置区=====================
 const SOURCE_LIST = [
   {
-    url: ""
+    url: "http://iptv.910501.xyz/"
   },
   {
-    url: "http://1.94.31.214/live/live9/dgtv.txt"
+    url: ""
   },
     {
     url: "https://nb.xymm.de5.net/0ybmli/https://iptv.445569.xyz/live.m3u"
   }, 
       {
-    url: "http://iptv.910501.xyz/"
+    url: "http://1.94.31.214/live/live9/dgtv.txt"
   }, 
    {
     url: "https://gh-proxy.com/https://raw.githubusercontent.com/807080747/Collect-IPTV/refs/heads/main/best_sorted.m3u"
