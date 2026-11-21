@@ -1,15 +1,13 @@
 const fetch = require('node-fetch');
 const fs = require('fs');
-// =====================配置区=====================
+
+// =========在这里添加所有源，txt、m3u都支持=========
 const SOURCE_LIST = [
   {
     url: "http://iptv.910501.xyz/"
   },
   {
     url: "https://nb.xymm.de5.net/0ybmli/https://iptv.445569.xyz/live.m3u"
-  },
-  {
-    url: "https://gh-proxy.com/https://raw.githubusercontent.com/807080747/ss/refs/heads/main/ooo.txt"
   },
   {
     url: "http://1.94.31.214/live/live9/dgtv.txt"
@@ -19,56 +17,40 @@ const SOURCE_LIST = [
   },
   {
     url: "https://16097.kstore.space/xiang/migu.txt"
-  },
-
-];
-const GLOBAL_TIMEOUT = 12000;
-const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财经广告", "弹窗", "☘️重要提醒🍀", "TG频道"];
-const blackListKeywords = ["测试", "失效", "演示", "备用源", "广告台"];
-const priorityGroups = ["央视", "央视频道", "卫视频道", "卫视"];
-const lockGroupName = "成人频道"; // 需要加密的分组名
-const lockPwd = "666";        // 密码
-// =================================================
-
-function getCctvNum(name) {
-  const m = name.match(/CCTV[‑\-](\d+)/i);
-  if (m) return parseInt(m[1], 10);
-  return null;
-}
-
-function channelNameSort(a, b) {
-  const na = getCctvNum(a.name);
-  const nb = getCctvNum(b.name);
-  if (na !== null && nb !== null) {
-    return na - nb;
   }
-  return a.name.localeCompare(b.name, 'zh-CN', { numeric: true, sensitivity: 'base' });
-}
+];
 
-function cleanChannelName(name) {
-  return name
-    .replace(/[◆★■●▶▷【】〖〗「」『』《》♫♪]/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// 全局统一超时：15秒
+const GLOBAL_TIMEOUT = 15000;
+// 广告关键词过滤
+const adKeywords = ["广告", "购物", "付费", "商城", "游戏推广", "财经广告", "弹窗", "TG频道"];
 
-function pushRawChannel(name, url, group, rawLiveList) {
-  if (!name) name = "未知频道";
-  const cleanName = cleanChannelName(name);
-  const u = url.trim();
-  const invalidUrl = !u.startsWith("http") || u.length === 0;
-  const isAd = adKeywords.some(w => cleanName.includes(w) || group.includes(w));
-  const isBlack = blackListKeywords.some(w => cleanName.includes(w));
-  if (isAd || isBlack || invalidUrl) return;
-  rawLiveList.push({ name: cleanName, url: u, group });
+// 全局存储解析后的频道 {name,url,group}
+let allChannelList = [];
+
+/**
+ * 加入频道，做广告、url合法性过滤
+ */
+function pushChannel(name, url, group) {
+  const n = (name || "未知频道").trim();
+  const u = (url || "").trim();
+  const g = (group || "未分组").trim();
+
+  const isAd = adKeywords.some(word => n.includes(word) || g.includes(word));
+  const invalidUrl = !u.startsWith("http");
+  if (isAd || invalidUrl) return;
+
+  allChannelList.push({ name: n, url: u, group: g });
 }
 
 async function run() {
-  let rawLiveList = [];
+  allChannelList = [];
+
   for (const source of SOURCE_LIST) {
     const sourceUrl = source.url;
     console.log(`\n=====正在读取源：${sourceUrl}=====`);
     console.log(`⏱️全局超时设置：${GLOBAL_TIMEOUT / 1000}秒`);
+
     try {
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), GLOBAL_TIMEOUT);
@@ -76,26 +58,32 @@ async function run() {
         headers: {
           "User-Agent": "Mozilla/5.0",
           "Cache-Control": "no-cache, no-store, must-revalidate",
+          "Pragma": "no-cache",
+          "Expires": "0"
         },
         signal: controller.signal
       });
       clearTimeout(timer);
+
       if (!res.ok) {
-        console.log(`❌访问源失败，状态码:${res.status}`);
+        console.log(`❌访问失败，状态码:${res.status}`);
         continue;
       }
       const content = await res.text();
-      console.log(`✅读取源成功，文件长度：${content.length}`);
+      console.log(`✅读取成功，文件长度：${content.length}`);
       const lines = content.split(/\r?\n/);
+
       let nowGroup = "未分组";
       let channelName = "未知频道";
+      let sourceCount = 0;
 
       for (const line of lines) {
-        // ==========核心修复：先清除\r回车符再trim，解决migu.txt解析不到==========
+        // 清除每行内的 \r 回车字符
         const rawLine = line.replace(/\r/g, '').trim();
         if (!rawLine) continue;
 
-        // m3u 扩展信息行 #EXTINF
+        // ---------------- M3U解析逻辑 ----------------
+        // #EXTINF 信息行
         if (rawLine.startsWith("#EXTINF:")) {
           const gMatch = rawLine.match(/group-title="([^"]+)"/);
           if (gMatch) nowGroup = gMatch[1].trim();
@@ -108,75 +96,56 @@ async function run() {
           continue;
         }
 
-        // TVBox txt分组标记 xxx,#genre#
+        // ---------------- TXT解析逻辑 ----------------
+        // tvbox分组标记
         if (rawLine.endsWith(",#genre#")) {
           nowGroup = rawLine.split(',')[0].trim();
           channelName = "未知频道";
           continue;
         }
 
-        // --------【修复重点】TVBox txt格式，兼容一行多个逗号，取最后一个逗号作为分割点 --------
-        if (!rawLine.startsWith("#") && rawLine.includes(',')) {
+        // txt格式 频道名,url 取最后一个逗号分割，兼容名字带逗号
+        if (rawLine.includes(',') && !rawLine.startsWith("#")) {
           const lastCommaIndex = rawLine.lastIndexOf(',');
-          const cName = rawLine.substring(0, lastCommaIndex).trim();
+          const cName = rawLine.substring(0, lastCommaIndex).trim() || "未知频道";
           const cUrl = rawLine.substring(lastCommaIndex + 1).trim();
-          pushRawChannel(cName, cUrl, nowGroup, rawLiveList);
+          pushChannel(cName, cUrl, nowGroup);
+          sourceCount++;
           continue;
         }
 
-        // m3u 播放地址行（上一行#EXTINF提供频道名称）
+        // m3u播放地址行（http链接，用上一行#EXTINF得到的频道名）
         if (rawLine.startsWith("http")) {
-          pushRawChannel(channelName, rawLine, nowGroup, rawLiveList);
+          pushChannel(channelName, rawLine, nowGroup);
+          sourceCount++;
         }
       }
-
+      console.log(`📌本源解析得到频道：${sourceCount}`);
     } catch (err) {
       if (err.name === "AbortError") {
-        console.error(`⏱️源读取超时：${sourceUrl}`);
+        console.error(`⏱️读取超时：${sourceUrl}`);
       } else {
-        console.error(`❌源读取异常：${sourceUrl}，${err.message}`);
+        console.error(`❌读取源出错：${sourceUrl}，${err.message}`);
       }
     }
   }
 
-  const validLive = rawLiveList;
-  console.log(`✅不做存活检测，全部保留，频道总数：${validLive.length}`);
-  const groupsAll = [...new Set(validLive.map(i => i.group))];
-  const priority = groupsAll.filter(g => priorityGroups.some(p => g.includes(p)));
-  const otherGroups = groupsAll.filter(g => !priorityGroups.some(p => g.includes(p)));
-  const finalGroupOrder = [...priority, ...otherGroups];
+  console.log(`\n🎉全部解析完成，总频道：${allChannelList.length}`);
 
-  //输出 live.txt  成人频道分组格式：成人频道_666,#genre#
-  let liveText = "";
-  const updateTime = new Date().toLocaleString('zh-CN');
-  liveText += `#更新时间：${updateTime}\n`;
-  for (const g of finalGroupOrder) {
-    const list = validLive.filter(x => x.group === g).sort(channelNameSort);
-    if (g !== "未分组") {
-      if(g.includes(lockGroupName)){
-        liveText += `${g}_${lockPwd},#genre#\n`;
-      }else{
-        liveText += `${g},#genre#\n`;
-      }
+  // 输出 TVBox 标准 live.txt
+  const usedGroup = new Set();
+  let txtOut = `#更新时间：${new Date().toLocaleString('zh-CN')}\n`;
+
+  for (const ch of allChannelList) {
+    if (ch.group !== "未分组" && !usedGroup.has(ch.group)) {
+      txtOut += `${ch.group},#genre#\n`;
+      usedGroup.add(ch.group);
     }
-    for (const ch of list) liveText += `${ch.name},${ch.url}\n`;
+    txtOut += `${ch.name},${ch.url}\n`;
   }
-  fs.writeFileSync("./live.txt", liveText, "utf8");
 
-  //输出 live.m3u m3u不支持分组密码，原样输出
-  let m3u = "#EXTM3U\n";
-  m3u += `#更新时间：${updateTime}\n`;
-  for (const g of finalGroupOrder) {
-    const list = validLive.filter(x => x.group === g).sort(channelNameSort);
-    for (const ch of list) {
-      m3u += `#EXTINF:-1 group-title="${g}",${ch.name}\n${ch.url}\n`;
-    }
-  }
-  fs.writeFileSync("./live.m3u", m3u, "utf8");
-
-  console.log("\n🎉全部处理完毕｜关闭链接探测，不会误删台");
-  console.log(`📺直播:${validLive.length}`);
-  console.log(`🔒【${lockGroupName}】分组已上锁，密码：${lockPwd}，输出格式：${lockGroupName}_${lockPwd},#genre#`);
+  fs.writeFileSync("./live.txt", txtOut, "utf8");
+  console.log("✅输出完成 → live.txt (仅TVBox txt格式)");
 }
 
 run();
