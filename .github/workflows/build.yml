@@ -30,11 +30,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase
           git add live.txt live.m3u
           git diff --cached
           if git diff --cached --quiet; then
             echo "👉 文件内容无变化，跳过提交"
           else
             git commit -m "🤖 auto update iptv $(date '+%Y-%m-%d %H:%M')"
-            git push
+            git push origin main
           fi
