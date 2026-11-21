@@ -31,7 +31,8 @@ const lockPwd = "666";        // 密码
 // =================================================
 
 function getCctvNum(name) {
-  const m = name.match(/CCTV[‑‑](\d+)/i);
+  // 修复：正则兼容全角‑和半角-
+  const m = name.match(/CCTV[‑\-](\d+)/i);
   if (m) return parseInt(m[1], 10);
   return null;
 }
@@ -53,6 +54,7 @@ function cleanChannelName(name) {
 }
 
 function pushRawChannel(name, url, group, rawLiveList) {
+  if (!name) name = "未知频道";
   const cleanName = cleanChannelName(name);
   const u = url.trim();
   const invalidUrl = !u.startsWith("http") || u.length === 0;
