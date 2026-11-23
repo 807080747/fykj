@@ -4,7 +4,7 @@ const fs = require('fs');
 // =========在这里添加所有源，txt、m3u都支持=========
 const SOURCE_LIST = [
   {
-    url: "https://gh-proxy.com/https://raw.githubusercontent.com/grandiptv01-sketch/TV/refs/heads/main/GRANDPLUSKEYS777.m3u"
+    url: ""
   },
    {
     url: "http://iptv.910501.xyz/"
